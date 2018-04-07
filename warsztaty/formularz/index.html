@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <form action="https://formspree.io/mjarnicki@gmail.com" method="post">
+    <form action="https://formspree.io/mjarnicki@gmail.com" method="post" autocomplete="on">
         <label for="name">Imię:</label>
         <br/>
         <input name="Imię:" type="text" id="name">
@@ -22,20 +22,24 @@
         <br/>
         <label for="phoneNumber">Numer Telefonu:</label>
         <br/>
-        <input name="Numer Telefonu:" type="number" id="phoneNumber">
+        <input name="Numer Telefonu:" type="tel" id="phoneNumber">
         <br/>
         <label for="wojewodztwa">Województwo</label>
         <br/>
-        <select name="Województwo" id="wojewodztwa">
-             <option value="dolnośląskie">kujawsko-pomorskie</option>
+        <input list="wojewodztwo" name="Województwo">
+        <datalist name="Województwo" id="wojewodztwo">
+            
+             <option value="dolnośląskie">dolnośląskie</option>
              <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
              <option value="lubelskie">lubelskie</option>
              <option value="lubuskie">lubuskie</option>
-        </select>
+             
+        </datalist>
+
         <br>
-           <label for="sex">płeć:</label><br>
-            <input type="radio" name="Płeć:" value="male"> mężczyzna <br>
-            <input type="radio" name="Płeć" value="female"> kobieta <br>
+        <label for="sex">płeć:</label><br>
+        <input type="radio" name="Płeć:" value="male"> mężczyzna <br>
+        <input type="radio" name="Płeć" value="female"> kobieta <br>
         <br>
         <label for="message">Wiadomość</label>
         <br/>
