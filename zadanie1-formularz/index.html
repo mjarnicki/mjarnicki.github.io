@@ -14,42 +14,31 @@
 <body>
     <form action="https://formspree.io/mjarnicki@gmail.com" method="post">
         <label for="name">Imię:</label>
-        <br>
         <input type="text" name="Imię:" id="name">
-        <br>
         <label for="secondName">Nazwisko:</label>
-        <br>
         <input type="text" name="Nazwisko:" id="secondName">
-        <br>
         <label for="email">E-mail:</label>
-        <br>
         <input type="email" name="E-mail:" id="email">
-        <br>
         <label for="phone">Nr telefonu:</label>
-        <br>
         <input type="tel" name="Nr telefonu:" id="phone">
-        <br>
         <label for="city">Miasto:</label>
-        <br>
         <select name="Miasto:" id="city">
             <option value="Kraków">Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
         </select>
-        <br>
-        <label for="male">mężczyzna</label>
         <input type="radio" name="Płeć:" id="male" value="mężczyzna">
-        <br>
-        <label for="female">kobieta</label>
+        <label for="male">mężczyzna</label>
+        
         <input type="radio" name="Płeć:" id="female" value="kobieta">
-        <br>
-        <label for="zgoda">Zgoda na dane osobowe:</label>
+        <label for="female">kobieta</label>
         <br>
         <input type="checkbox" name="Zgoda na dane:" id="zgoda">
+        <label for="zgoda">Zgoda na dane osobowe</label>
         <br>
         <label for="message">Wiadomość:</label>
         <br>
-        <textarea name="Wiadomość:" id="message" rows="4" cols="50"> </textarea>
+        <textarea name="Wiadomość:" id="message" rows="4" cols="50"></textarea>
         <br>
         <input type="submit" id="button" disabled>
     </form>

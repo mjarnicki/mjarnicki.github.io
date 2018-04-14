@@ -1,0 +1,43 @@
+body
+{
+    background-color: #213b50;
+    color:white;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea, select, option
+{
+    background-color: #2b4a64;
+    border: 1px solid #2b4a64;
+    height: 20px;
+    color: #fff;
+    width: 200px;
+    resize: none;
+    outline: none;
+    display:block;
+}
+select
+{
+    height: 24px;
+}
+textarea
+{
+    height: 100px;
+}
+input:focus, textarea:focus, select:focus
+{
+    background-color: #4e708c ;
+    outline: none;
+    border: 1px solid #ffffff ;
+}
+form input[type="submit"]
+{
+    background-color: #1ac056;
+    border:none;
+    height: 30px;
+    width:90px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+}
+
+
+
