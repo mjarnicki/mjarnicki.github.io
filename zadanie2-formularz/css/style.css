@@ -1,0 +1,65 @@
+body
+{
+    background-color: white;
+}
+h1
+{
+    color: navy;
+    margin:10px 0 0 20px;
+}
+h3
+{
+    color:skyblue;
+    font-style: italic;
+    margin:10px 0 0 20px;
+}
+section
+{
+   width: 800px;
+    border: 2px solid black;
+    margin: 20px;
+    position: relative; 
+}
+#customer-info
+{
+    height:183px;
+    
+}
+.info-label
+{
+    position: absolute;
+    top: -16px;
+    left: 30px;
+    background-color: white;
+    padding: 5px;
+    margin: 0px;
+    font-weight: 400; 
+}
+label
+{
+     margin: 30px 0 30px 80px;
+}
+input
+{
+    margin: 30px 0 0 0;
+    width: 300px;
+}
+#books
+{
+    height:100px;
+    padding-left:80px;
+    width: 720px;
+}
+#books label
+{    
+    margin: 0px;
+}
+#books input[type="number"]
+{
+    width: 200px;
+}
+input[type="submit"]
+{
+    width: 100px;
+    margin: 0 0 0 20px;
+}
