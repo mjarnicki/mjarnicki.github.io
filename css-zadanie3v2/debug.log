@@ -10,3 +10,6 @@
 [0418/092014.208:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
 [0418/092014.208:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Potok zosta³ zakoñczony. (0x6D)
 [0418/092014.224:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[0418/094830.914:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[0418/094830.914:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Potok zosta³ zakoñczony. (0x6D)
+[0418/094830.914:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
