@@ -1,0 +1,28 @@
+#container
+{
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 650px;
+    background-image: url(../img/5-jezioro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+
+}
+#text
+{
+    margin-top: 175px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 0px;
+    opacity: 0.8;
+    transition:  font-size 2s linear;
+}
+#container:hover > #text
+{
+    font-size: 60px;
+}
