@@ -137,6 +137,7 @@ img[alt="author"] {
 
 #about-me-article {
     line-height: 1.5;
+    margin: 10px;
 }
 
 #skill {
@@ -274,9 +275,10 @@ img[alt="author"] {
     text-align: center;
     display: inline-block;
     border: 1px solid white;
-    margin: 2.5%;
+    margin: 10px;
     color: white;
     font-size: 1.5em;
+    transition: all 0.2s ease-in;
 }
 
 .social-icons a {
@@ -284,11 +286,14 @@ img[alt="author"] {
     display: block;
     height: 100%;
     width: 100%;
-    transition: color 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .social-icons a:hover {
-    color: #1ac056;
+    color:#1ac056;
+}
+.social-icons:hover {
+    border: 1px solid #1ac056;
 }
 
 .contact-form {
@@ -314,6 +319,7 @@ img[alt="author"] {
     margin: 7px;
     width: 85%;
     color: #949EA4;
+    resize: none;
 }
 
 .contact-form input::placeholder {
@@ -334,7 +340,11 @@ img[alt="author"] {
     width: 120px;
     color: white;
     border: 1px solid white;
-    margin-left: 68%;
+    transition: background-color 0.3s ease-in-out;
+}
+.contact-form #send:hover
+{
+    background-color: #3ceb78;
 }
 
 #signature {
