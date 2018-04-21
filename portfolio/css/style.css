@@ -1,16 +1,19 @@
-body
-{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     height: 2000px;
 }
-span
-{
+
+span {
     font-weight: 400;
     color: #1ac056;
 }
-#header-container
-{
+
+#header-container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -20,8 +23,8 @@ span
     background-image: url(../img/header-background.jpg);
     background-position: center center;
 }
-#header-container nav
-{
+
+#header-container nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,42 +34,40 @@ span
     opacity: 0.8;
     z-index: 2;
 }
-#header-container nav ul
-{
+
+#header-container nav ul {
     padding: 0;
     position: fixed;
     right: 0;
-    margin:0px;
+    margin: 0px;
 }
 
-#header-container nav ul li
-{
+#header-container nav ul li {
     display: inline-block;
     text-align: center;
 }
-#header-container nav ul li a
-{
+
+#header-container nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 300;
-    padding:20px;
+    padding: 20px;
     display: block;
-    width: 80px;
 }
-#header-container nav ul li a:hover
-{
-   background-color: #1ac056;
-    opacity: 0.8; 
+
+#header-container nav ul li a:hover {
+    background-color: #1ac056;
+    opacity: 0.8;
 }
-#header-container header
-{
+
+#header-container header {
     top: 30%;
     width: 100%;
     position: absolute;
     text-align: center;
 }
-#header-container header h1
-{
+
+#header-container header h1 {
     font-size: 8.5em;
     width: 100%;
     margin: 0;
@@ -74,95 +75,252 @@ span
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
-#header-container header #h2-header
-{
+
+#header-container header #h2-header {
     color: white;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     margin: 0px;
 }
-#about-me
-{
+
+#about-me {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    overflow:hidden;
-    background-color: #f9fcfe ;
+    overflow: hidden;
+    background-color: #f9fcfe;
     padding: 0 0 100px 0;
     -webkit-box-shadow: 0 5px 10px #e7e7e7;
     -moz-box-shadow: 0 5px 10px #e7e7e7;
     box-shadow: 0 5px 10px #e7e7e7;
 }
-.h2-class
-{
+
+.h2-class {
     font-weight: 200;
     margin-top: 60px;
     text-align: center;
     font-size: 30px;
 }
-#about-me-picture
-{
+
+#about-me-picture {
     width: 50%;
-    float:left; 
+    float: left;
     text-align: center;
-    margin:0;    
+    margin: 0;
 }
-img[alt="author"]
-{
-   max-height: 320px;
+
+img[alt="author"] {
+    max-height: 320px;
     max-width: 100%;
     border: 10px solid white;
     border-radius: 7px;
 }
-#about-me-article
-{
+
+#about-me-article {
     line-height: 1.5;
 }
-#skill
-{
+
+#skill {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     padding: 0 0 100px 0;
 }
-#skill-description
-{
+
+#skill-description {
     text-align: center;
-    margin:30px;
+    margin: 30px;
     line-height: 1.5;
 }
-#skill-icons
-{
+
+#skill-icons {
     text-align: center;
 }
-#skill-icons figure
-{
+
+#skill-icons figure {
     display: inline-block;
 }
-#skill-icons figure figcaption
-{
+
+#skill-icons figure figcaption {
     margin-top: 15px;
 }
-#portfolio
-{
+
+#portfolio {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     padding: 0 0 100px 0;
 }
-#portfolio-icons
-{
+
+#portfolio-icons-container {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 300px;
-    background-color: green;
+    width: 87%;
+    height: 380px;
 }
 
+.portfolio-icons {
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    margin: 0;
+}
 
+#icon1 {
+    background-image: url(../img/portfolio1.jpg);
+    background-position: center;
+}
 
+#icon2 {
+    background-image: url(../img/portfolio2.jpg);
+    background-position: center;
+}
+
+#icon3 {
+    background-image: url(../img/portfolio4.jpg);
+    background-position: center;
+}
+
+.portfolio-icon-background {
+    background-color: rgba(42, 61, 79);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+    padding: 10px;
+}
+
+.portfolio-icon-background:hover {
+    opacity: 0.8;
+}
+
+.portfolio-icon-content {
+    height: 360px;
+    width: 100%;
+    border: 1px solid white;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.portfolio-icon-content h4 {
+    font-size: 20px;
+}
+
+#contact {
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+    background-color: #213b50;
+}
+
+#contact-data {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+#contact-data .h2-class {
+    color: white;
+    text-align: left;
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+
+#signature {
+    background-color: #142634;
+    color: white;
+    padding-left: 80px;
+}
+#contact-data p
+{
+    color: white;
+    margin: 7px 0 7px 0;
+}
+#contact-data p:nth-of-type(2n) 
+{
+    color: white;
+    margin: 5px 0 25px 0;
+}
+#contact-data p a
+{
+    color: #1ac056;
+}
+#social-icons-container
+{
+    height: 20%;
+}
+.social-icons
+{
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 2.5%;
+    color:white;
+    font-size: 1.5em;
+}
+.social-icons a
+{
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: color 0.2s ease-in;
+}
+.social-icons a:hover
+{
+   color: #1ac056;
+}
+#contact-form {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 40px;
+}
+#contact-form input
+{
+    background-color: #2B4A64;
+    border: none;
+    padding: 4%;
+    outline: none;
+    margin: 2%;
+    width: 170%;
+    color: #949EA4;
+}
+#contact-form input::placeholder
+{
+    color: #949EA4;
+}
+#contact-form textarea
+{
+    background-color: #2B4A64;
+    border: none;
+    padding: 4%;
+    outline: none;
+    margin: 2%;
+    width: 170%;
+    height: 23%;
+    color: #949EA4;
+}
+#contact-form textarea::placeholder
+{
+    color: #949EA4;
+}
+#contact-form #send
+{
+    position: relative;
+    background-color: #1ac056;
+    width: 35%;
+    color: white;
+    border: 1px solid white;
+    margin-left: 137%;
+}
