@@ -43,7 +43,7 @@
     #menu-responsive {
         display: block;
     }
-    .nav-horizontal-invisible{
+    .nav-horizontal-invisible {
         background-color: transparent;
     }
     nav ul li {
@@ -55,5 +55,12 @@
         background-color: grey;
         opacity: 0.8;
     }
-    
+    #roll-up {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 35px;
+    }
+
 }
