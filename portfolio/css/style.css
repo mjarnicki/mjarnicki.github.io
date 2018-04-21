@@ -24,7 +24,7 @@ span {
     background-position: center center;
 }
 
-#header-container nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,19 +35,20 @@ span {
     z-index: 2;
 }
 
-#header-container nav ul {
+nav ul {
     padding: 0;
     position: fixed;
     right: 0;
     margin: 0px;
 }
 
-#header-container nav ul li {
-    display: inline-block;
+nav ul li {
+    float: left;
+    list-style-type: none;
     text-align: center;
 }
 
-#header-container nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 300;
@@ -55,19 +56,35 @@ span {
     display: block;
 }
 
-#header-container nav ul li a:hover {
+nav ul li a:hover {
     background-color: #1ac056;
     opacity: 0.8;
 }
 
-#header-container header {
+#menu-responsive {
+    display: none;
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    width: 129px;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+#menu-responsive:hover {
+    background-color: #1ac056;
+    opacity: 0.8;
+}
+
+
+header {
     top: 30%;
     width: 100%;
     position: absolute;
     text-align: center;
 }
 
-#header-container header h1 {
+header h1 {
     font-size: 8.5em;
     width: 100%;
     margin: 0;
@@ -153,38 +170,37 @@ img[alt="author"] {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    overflow: hidden;
-    padding: 0 0 100px 0;
+    padding-bottom: 100px;
 }
 
 #portfolio-icons-container {
     margin-left: auto;
     margin-right: auto;
     width: 87%;
-    height: 380px;
+    text-align: center;
 }
 
 .portfolio-icons {
     position: relative;
     height: 100%;
     width: 33.33%;
-    float: left;
+    display: inline-block;
     margin: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 #icon1 {
     background-image: url(../img/portfolio1.jpg);
-    background-position: center;
+
 }
 
 #icon2 {
     background-image: url(../img/portfolio2.jpg);
-    background-position: center;
 }
 
 #icon3 {
     background-image: url(../img/portfolio4.jpg);
-    background-position: center;
 }
 
 .portfolio-icon-background {
@@ -214,18 +230,17 @@ img[alt="author"] {
 }
 
 #contact {
-    margin-top: 100px;
     width: 100%;
-    height: 450px;
-    background-color: #213b50;
 }
 
 #contact-data {
     float: left;
     width: 50%;
-    height: 100%;
+    height: 450px;
     padding-left: 5%;
+    background-color: #213b50;
 }
+
 #contact-data .h2-class {
     color: white;
     text-align: left;
@@ -234,93 +249,96 @@ img[alt="author"] {
     margin-bottom: 90px;
 }
 
-#signature {
-    background-color: #142634;
-    color: white;
-    padding-left: 80px;
-}
-#contact-data p
-{
+
+#contact-data p {
     color: white;
     margin: 7px 0 7px 0;
 }
-#contact-data p:nth-of-type(2n) 
-{
+
+#contact-data p:nth-of-type(2n) {
     color: white;
     margin: 5px 0 25px 0;
 }
-#contact-data p a
-{
+
+#contact-data p a {
     color: #1ac056;
 }
-#social-icons-container
-{
+
+#social-icons-container {
     height: 20%;
 }
-.social-icons
-{
+
+.social-icons {
     line-height: 40px;
     width: 40px;
     text-align: center;
     display: inline-block;
     border: 1px solid white;
     margin: 2.5%;
-    color:white;
+    color: white;
     font-size: 1.5em;
 }
-.social-icons a
-{
+
+.social-icons a {
     color: white;
     display: block;
     height: 100%;
     width: 100%;
     transition: color 0.2s ease-in;
 }
-.social-icons a:hover
-{
-   color: #1ac056;
+
+.social-icons a:hover {
+    color: #1ac056;
 }
-#contact-form {
-    float: left;
+
+.contact-form {
+    display: inline-block;
     width: 50%;
+    height: 450px;
+    padding-top: 40px;
+    background-color: #213b50;
+}
+
+.send-contact {
     height: 100%;
     padding-top: 40px;
+    margin: 0;
 }
-#contact-form input
-{
+
+.contact-form input,
+.contact-form textarea {
     background-color: #2B4A64;
     border: none;
-    padding: 4%;
+    padding: 15px;
     outline: none;
-    margin: 2%;
-    width: 170%;
+    margin: 7px;
+    width: 85%;
     color: #949EA4;
 }
-#contact-form input::placeholder
-{
+
+.contact-form input::placeholder {
     color: #949EA4;
 }
-#contact-form textarea
-{
-    background-color: #2B4A64;
-    border: none;
-    padding: 4%;
-    outline: none;
-    margin: 2%;
-    width: 170%;
-    height: 23%;
+
+.contact-form textarea {
+    height: 90px;
+}
+
+.contact-form textarea::placeholder {
     color: #949EA4;
 }
-#contact-form textarea::placeholder
-{
-    color: #949EA4;
-}
-#contact-form #send
-{
+
+.contact-form #send {
     position: relative;
     background-color: #1ac056;
-    width: 35%;
+    width: 120px;
     color: white;
     border: 1px solid white;
-    margin-left: 137%;
+    margin-left: 68%;
+}
+
+#signature {
+    background-color: #142634;
+    color: white;
+    padding-left: 80px;
 }
