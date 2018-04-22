@@ -1,28 +1,64 @@
 #container
 {
-    padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    height: 350px;
+    width: 690px;
+    height: 390px;
+    position: relative;
+    
+}
+#top
+{
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    position: absolute;
+    top:0;
+    transition: height 5s linear;
+}
+#bottom
+{
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    transition: height 5s linear;
+}
+#background
+{
     width: 650px;
-    background-image: url(../img/5-jezioro.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-
+    height: 350px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+     background-repeat: no-repeat;
 }
 #text
 {
-    margin-top: 175px;
     background-color: black;
     color:white;
     text-align: center;
     transform: translateY(-50%);
     font-size: 0px;
     opacity: 0.8;
-    transition:  font-size 2s linear;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 690px;
+    transition:  font-size 5s linear;
 }
-#container:hover > #text
+#container:hover > #top
 {
-    font-size: 60px;
+   height: 50%;
+}
+#container:hover > #bottom
+{
+   height: 50%;
+}
+#container:hover #text
+{
+   font-size: 60px;
 }
