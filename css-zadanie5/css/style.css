@@ -8,7 +8,7 @@ body
 }
 .product
 {
-    min-width:22%;
+    width:22%;
     height: 300px;
     background-color: #fff;
     display: inline-block;
