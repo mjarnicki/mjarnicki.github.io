@@ -144,9 +144,11 @@ img[alt="author"] {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 100%;
     overflow: hidden;
     padding: 0 0 100px 0;
+    opacity: 0;
 }
 
 #skill-description {
@@ -171,7 +173,8 @@ img[alt="author"] {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding-bottom: 100px;
+    overflow: hidden;
+    padding: 0 0 100px 0;
 }
 
 #portfolio-icons-container {
@@ -201,7 +204,7 @@ img[alt="author"] {
 }
 
 #icon3 {
-    background-image: url(../img/portfolio4.jpg);
+    background-image: url(../img/maze.jpg);
 }
 
 .portfolio-icon-background {
