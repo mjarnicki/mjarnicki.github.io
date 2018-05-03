@@ -101,8 +101,9 @@ header h1 {
     margin: 0px;
 }
 
-#about-me {
+.about-me {
     position: relative;
+    left: -800px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -112,6 +113,11 @@ header h1 {
     -webkit-box-shadow: 0 5px 10px #e7e7e7;
     -moz-box-shadow: 0 5px 10px #e7e7e7;
     box-shadow: 0 5px 10px #e7e7e7;
+    transition: all 0.5s ease-out;
+}
+
+.about-me-slide {
+    transform: translateX(800px);
 }
 
 .h2-class {
@@ -140,7 +146,7 @@ img[alt="author"] {
     margin: 10px;
 }
 
-#skill {
+.skill {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +155,13 @@ img[alt="author"] {
     overflow: hidden;
     padding: 0 0 100px 0;
     opacity: 0;
+    transition: all 1s linear;
+    top: -40px;
+}
+
+.skill-slide {
+    opacity: 1;
+    transform: translateY(40px);
 }
 
 #skill-description {
@@ -196,7 +209,6 @@ img[alt="author"] {
 
 #icon1 {
     background-image: url(../img/portfolio1.jpg);
-
 }
 
 #icon2 {
@@ -209,6 +221,7 @@ img[alt="author"] {
 
 .portfolio-icon-background {
     background-color: rgba(42, 61, 79);
+    display: block;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -293,8 +306,9 @@ img[alt="author"] {
 }
 
 .social-icons a:hover {
-    color:#1ac056;
+    color: #1ac056;
 }
+
 .social-icons:hover {
     border: 1px solid #1ac056;
 }
@@ -345,8 +359,8 @@ img[alt="author"] {
     border: 1px solid white;
     transition: background-color 0.3s ease-in-out;
 }
-.contact-form #send:hover
-{
+
+.contact-form #send:hover {
     background-color: #3ceb78;
 }
 
@@ -355,22 +369,27 @@ img[alt="author"] {
     color: white;
     padding-left: 80px;
 }
-#roll-up{
-    
+
+.roll-up {
+
     position: fixed;
-    bottom: 30px;
+    bottom: -70px;
     right: 30px;
-    width:50px;
+    width: 50px;
     line-height: 50px;
     text-align: center;
     font-size: 40px;
     background-color: #1ac056;
     z-index: 3;
-    display: none;
     text-decoration: none;
     color: white;
+    transition: all 0.2s linear;
 }
-#roll-up:hover
-{
-     background-color: #3ceb78;
+
+.roll-up:hover {
+    background-color: #3ceb78;
+}
+
+.roll-up-slide {
+    transform: translateY(-100px);
 }

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-   <a href="#header-container" id="roll-up"><i class="fas fa-angle-up"></i></a>
+   <a href="#header-container" class="roll-up"><i class="fas fa-angle-up"></i></a>
    
     <div id="header-container">
         <nav>
@@ -39,7 +39,7 @@
             <h2 id="h2-header">Front-End Developer</h2>
         </header>
     </div>
-    <section id="about-me">
+    <section class="about-me">
         <h2 class="h2-class">
             O <span>mnie</span>
         </h2>
@@ -50,14 +50,18 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolores consequuntur quaerat, at voluptates dicta voluptas eos facilis, dolore repellendus. Delectus repudiandae, magni at cum soluta consequuntur! Dolor asperiores accusamus recusandae quo rem aspernatur tempora animi, nemo dignissimos doloribus natus odit consequuntur, ducimus qui itaque quos reiciendis labore assumenda vero praesentium magnam consectetur reprehenderit eveniet libero. Laudantium architecto repellat porro incidunt quidem, cupiditate optio dignissimos necessitatibus qui! Voluptatibus ea illum ipsa omnis pariatur. Rem corporis cumque delectus, fugiat ut, modi non possimus veniam id amet, quos similique! Mollitia at, sapiente sequi, corporis nihil, aut explicabo consectetur optio ab, voluptatibus aspernatur?
         </article>
     </section>
-    <section id="skill">
+    <section class="skill">
         <h2 class="h2-class">
             Moje <span>umiejętności</span>
         </h2>
         <article id="skill-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perspiciatis, sapiente reprehenderit eos consectetur accusantium labore odio aut eum ex, veritatis iure in excepturi corporis ea eligendi dolor debitis optio? Fugit natus autem alias tempore incidunt quia dolorum mollitia, voluptatum.
+            Poniżej przedstawiam umiejętności, jakie poznałem w stopniu umożliwającym zastosowanie w tworzonych projektach. Systematycznie poszrzam swoją wiedzę o nowe technologie. W czasie trwającego bootcampu opanuję także podstawy Ajax, Gulp, preprocesora Sass i Wordpress.
         </article>
         <article id="skill-icons">
+           <figure>
+                <img src="icons/git.png" alt="GIT">
+                <figcaption>GIT</figcaption>
+            </figure>
             <figure>
                 <img src="icons/html5.png" alt="HTML 5">
                 <figcaption>HTML 5</figcaption>
@@ -105,7 +109,7 @@
                 </div>
             </figure><!-- 
         --><figure class="portfolio-icons" id="icon3">
-                <div class="portfolio-icon-background">
+                <a href="http://aaakowalski.esy.es/labirynt" class="portfolio-icon-background">
                     <div class="portfolio-icon-content">
                         <h4>Labirynt</h4>
                         <p> Gra polegająca na przejściu labiryntu myszką w taki sposób, aby nie wejść na żółte pola. Po każdym uruchomieniu korytarze generowane są losowo. Liczony jest także czas przejścia.</p>
@@ -114,7 +118,7 @@
                         </p>
                         <i class="fas fa-cogs fa-3x"></i>
                     </div>
-                </div>
+                </a>
             </figure>
         </article>
         </section>

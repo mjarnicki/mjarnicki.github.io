@@ -1,6 +1,6 @@
+ 'use strict';
 $(function () {
-    'use strict';
-
+   
     $("#menu-responsive").click(function () {
         $("nav ul li").toggleClass("horizontal-menu")
         $("nav").toggleClass("nav-horizontal-invisible");
@@ -8,21 +8,26 @@ $(function () {
 
     $(window).scroll(function () {
         var position = window.pageYOffset;
-        console.log(position);
+
         if (position > 100) {
-            $("#roll-up").css("display", "block");
+            $(".roll-up").addClass("roll-up-slide");
         } else {
-            $("#roll-up").css("display", "none");
-        }
-        if (position > 800) {
-            $("#skill").animate({
-                opacity: "1"
-            });
+            $(".roll-up").removeClass("roll-up-slide");
+        };
+        
+        if (position > 100) {
+            $(".about-me").addClass("about-me-slide");
         } else {
-            $("#skill").animate({
-                opacity: "0"
-            });
+            $(".about-me").removeClass("about-me-slide");
         }
+        
+        var skillPosition = $(".skill").offset().top - $(".skill").outerHeight();
+        if (position > skillPosition) {
+            $(".skill").addClass("skill-slide");
+        } else {
+            $(".skill").removeClass("skill-slide");
+        }
+
     });
 
 })
