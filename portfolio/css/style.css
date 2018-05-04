@@ -103,11 +103,12 @@ header h1 {
 
 .about-me {
     position: relative;
-    left: -800px;
+    left: -1200px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     overflow: hidden;
+    text-align: justify;
     background-color: #f9fcfe;
     padding: 0 0 100px 0;
     -webkit-box-shadow: 0 5px 10px #e7e7e7;
@@ -117,7 +118,7 @@ header h1 {
 }
 
 .about-me-slide {
-    transform: translateX(800px);
+    transform: translateX(1200px);
 }
 
 .h2-class {
@@ -143,7 +144,7 @@ img[alt="author"] {
 
 #about-me-article {
     line-height: 1.5;
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .skill {
@@ -190,7 +191,7 @@ img[alt="author"] {
     padding: 0 0 100px 0;
 }
 
-#portfolio-icons-container {
+.portfolio-icons-container {
     margin-left: auto;
     margin-right: auto;
     width: 87%;
@@ -207,17 +208,33 @@ img[alt="author"] {
     background-position: center;
 }
 
-#icon1 {
+.icon1 {
     background-image: url(../img/redaguje.JPG);
     background-position: left top;
+    left: -500px;
+    transition: all 0.3s linear;
 }
 
-#icon2 {
+.icon2 {
     background-image: url(../img/maze.jpg);
+    top: 500px;
+    transition: all 0.3s linear;
 }
 
-#icon3 {
+.icon3 {
     background-image: url(../img/portfolio1.jpg);
+    right: -500px;
+    transition: all 0.3s linear;
+}
+
+.portfolio-slide-1 {
+    transform:translateX(500px);
+}
+.portfolio-slide-2 {
+    transform:translateY(-500px);
+}
+.portfolio-slide-3 {
+    transform:translateX(-500px);
 }
 
 .portfolio-icon-background {
