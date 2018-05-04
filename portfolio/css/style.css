@@ -135,7 +135,7 @@ header h1 {
 }
 
 img[alt="author"] {
-    max-height: 320px;
+    max-height: 420px;
     max-width: 100%;
     border: 10px solid white;
     border-radius: 7px;
@@ -208,15 +208,16 @@ img[alt="author"] {
 }
 
 #icon1 {
-    background-image: url(../img/portfolio1.jpg);
+    background-image: url(../img/redaguje.JPG);
+    background-position: left top;
 }
 
 #icon2 {
-    background-image: url(../img/portfolio2.jpg);
+    background-image: url(../img/maze.jpg);
 }
 
 #icon3 {
-    background-image: url(../img/maze.jpg);
+    background-image: url(../img/portfolio1.jpg);
 }
 
 .portfolio-icon-background {
