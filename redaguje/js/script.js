@@ -1,6 +1,6 @@
    'use strict';
    $("#stona").on("click", function () {
-       $("article").load()
+       $("article").load(("ajax/strona.html"))
    });
 
    $("#oferta").on("click", function () {
@@ -8,9 +8,9 @@
    });
 
    $("#o-mnie").on("click", function () {
-       $("article").load()
+       $("article").load("ajax/o-mnie.html")
    });
 
    $("#kontakt").on("click", function () {
-       $("article").load()
+       $("article").load("ajax/kontakt.html")
    });
