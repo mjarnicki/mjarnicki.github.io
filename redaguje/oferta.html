@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+	
+	 	<meta charset="utf-8"/>
+		
+		<title>"Redaguje" Redakcje tekstów</title>
+		<link rel="Shortcut icon" href="img/favicon.ico" />
+		
+		<meta name="keywords" content="redagowanie, redakcja, korekty, tekst, artykuły, książki, poprawki, błędy"/>
+		
+		<meta name="description" content="Oferujemy korekty książek, artykułów, publikacji naukowych, wpisów blogowych. Atrakcyjne ceny, zapraszamy do współpracy"/>
+		
+		<meta name="author" content="Felicja Jarnicka">
+		
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="font/css/fontello.css">
+		
+		<script type="text/javascript">
+	
+		var numer = Math.floor(Math.random()*5)+1;
+	
+		function zmienslajd()
+		{
+			numer++; if (numer>4) numer=1;
+			var plik = "<img src =\"img/slajd" + numer + ".jpg\"/>";
+			
+			document.getElementById("adpicture").innerHTML = plik;
+		
+			setTimeout("zmienslajd()", 5000);
+		}
+		</script>	
+		<script src="jquery-3.3.1.min.js">	</script>
+		<script src="licznik.js"> </script>		
+	</head>
+
+	<body onload="zmienslajd()">
+	
+		<div id="container">
+			<div id="adpicture">
+			</div>
+		
+		<nav>
+			<div id="menu">
+				<ol>
+					<li><a href="strona-glowna" class="other">Stona Główna</a>	</li>
+					<li><a href="oferta-redakcja-korekty-tekstow" class="current">Oferta</a>	</li>
+					<li><a href="o-mnie" class="other">O mnie</a>	</li>
+					<li><a href="kontakt-korekty-redakcja-tekstow" class="other">Kontakt</a>	</li>
+				</ol>
+				<ul>
+					<li><a href="https://pl-pl.facebook.com/redagujecom" target="_blank"><i class="demo-icon icon-facebook-official"></i><a> </li>
+					<li><a href="https://www.instagram.com/redaguje/" target="_blank"><i class="demo-icon icon-instagram"></i><a></li>
+					<li><a href="https://www.youtube.com" target="_blank"><i class="demo-icon icon-youtube"></i><a></li>
+				</ul>
+			</div>
+			
+		</nav>
+			
+		<main>
+			
+			<div id="content">
+				<article>
+					<header>
+						<h1> Oferta </h1>
+					</header>
+						<p>
+							<h4>Cennik usług:</h4>
+								<div class="offer">Korekta tekstu: </div><div class="price">5zł/strona*</div>
+								<div style="clear:both;"></div>
+								<div class="offer">Korekta tekstu z redakcją: </div><div class="price">8zł/strona*</div>
+								<div style="clear:both;"></div>
+								<div class="offer">Korekta dłuższych tekstów: </div><div class="price">od 110 zł/arkusz*</div>
+								<div style="clear:both;"></div>
+							<br>
+							* strona - 1800 znaków razem ze spacjami
+							<br>
+							** arkusz - 40000 znaków razem ze spacjami
+							<h4>Sprawdź długość swojego tekstu:</h4>
+						</p>
+						<textarea id="textarea" placeholder="wklej swój tekst..." rows="4"></textarea>
+							<div style="clear:both;"></div>
+						<input id="buttonCalculate" type="button" value="oblicz">
+							<div style="clear:both;"></div>
+						<input id="buttonRemoveText" type="button" value="skasuj tekst">
+							<div style="clear:both;"></div>
+							<div class="offer">Ilość znaków: </div>	<div class="price" id="letters"></div>
+							<div style="clear:both;"></div>
+							<div class="offer">Ilość słów: </div><div class="price" id="words"></div>
+							<div style="clear:both;"></div>
+							<div class="offer">Ilość stron: </div><div class="price" id="pages"></div>
+							<div style="clear:both;"></div>
+							<div class="offer">Ilość arkuszy: </div><div class="price" id="sheets"></div>
+							<div style="clear:both;"></div>
+							
+						<input id="buttonLetterCalculate" type="button" value="sprawdź statystykę liter">
+						
+				</article>
+			</div>
+			<div id="aside">
+				<aside>
+				<h2> Polecane:</h2>
+					<div class="recommend">
+						<a href="http://sekretarzyk1984.blogspot.com/" target="_blank"><img src="img/sekretarzyk.jpg" class="recopic"/></a>
+						Blog z opowiadadaniami i literatuą kobiecą.
+					</div>
+					<div class="recommend">
+						<a href="http://wenorosl.blogspot.com/" target="_blank"><img src="img/wenorosl.jpg" class="recopic"/></a>
+						Blog z opowiadadaniami fantasy.
+					</div>
+					<div class="recommend">
+						<a href="http://spelniajacmarzenia-s7.blog.pl/" target="_blank"><img src="img/spelniajac.jpg" class="recopic"/></a>
+						Blog z recenzjami książek i wywiadami.
+					</div>
+					<div class="recommend">
+						<a href="http://polamanepiora.blogspot.com" target="_blank"><img src="img/polamane.jpg" class="recopic"/></a>
+						Luźny blog o pisaniu.
+					</div>
+				</aside>
+			</div>
+			<div style="clear:both;"></div>
+		</main>
+		</div>
+		<footer>
+			<div id="footer">
+			Copyright &copy; 2017 Maciej Jarnicki - web developing
+			</div>
+		
+		</footer>
+		
+		<aside id="popup">
+			<div id="statistic">
+				<div id="close"></div>
+				<div id="alphabet"></div>
+			</div>
+		</aside>
+		
+	</body>
+<html>
+
