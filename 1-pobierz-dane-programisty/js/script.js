@@ -18,7 +18,7 @@
         function showText(response) {
             var daneProgramisty = "Imię: " + response.imie + ",<br> Nazwisko: " + response.nazwisko + ", <br> Zawód: " + response.zawod + ",<br> Firma: " + response.firma;
             
-            $("#dane-programisty").html(daneProgramisty);
+            $("button").after('<div id="dane-programisty">' + daneProgramisty + '</div>' );
         }
 
     });
