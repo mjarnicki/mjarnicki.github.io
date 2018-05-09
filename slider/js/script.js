@@ -23,7 +23,8 @@ $(function () {
             no++;
             moveRight(no);
         } else {
-            no = no;
+            no = 0;
+            moveRight(no);
         }
     });
 
@@ -32,7 +33,8 @@ $(function () {
             no--;
             moveLeft(no);
         } else {
-            no = no;
+            no = 3;
+            moveLeft(no);
         }
     });
 
