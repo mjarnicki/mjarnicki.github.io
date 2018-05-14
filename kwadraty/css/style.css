@@ -1,0 +1,17 @@
+body
+{
+    background-color: #98CA32;
+}
+#container
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+}
+.square
+{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: #340913;
+}
