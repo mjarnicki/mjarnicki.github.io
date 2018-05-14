@@ -31,6 +31,7 @@
          } else {
              $(".skill").removeClass("skill-slide");
          }
+         //spróbować scrollY
          
          var portfolioPosition = $(".portfolio-icons-container").offset().top - $(".portfolio-icons-container").outerHeight();
          if (position > portfolioPosition){
