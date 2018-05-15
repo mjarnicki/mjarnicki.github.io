@@ -13,7 +13,7 @@
 
                 if (kupnoPoprzednie < kupno) {
                     if (kupnoPoprzednie != 0) {
-                        $("#znak-kupno").append('<i class="fas fa-arrow-up"></i>');
+                        $("#znak-kupno").html('<i class="fas fa-arrow-up"></i>');
                     } else if (kupnoPoprzednie == 0) {
                         $("#znak-kupno").html("");
                     }
@@ -25,7 +25,7 @@
 
                 if (sprzedaz > sprzedazPoprzednie) {
                     if (sprzedazPoprzednie != 0) {
-                        $("#znak-sprzedaz").append('<i class="fas fa-arrow-up"></i>');
+                        $("#znak-sprzedaz").html('<i class="fas fa-arrow-up"></i>');
                     } else if (sprzedazPoprzednie == 0) {
                         $("#znak-sprzedaz").html("");
                     }
