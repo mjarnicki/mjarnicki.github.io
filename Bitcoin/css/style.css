@@ -1,0 +1,21 @@
+.fa-arrow-up
+{
+    color: green;
+}
+.fa-arrow-down
+{
+    color: red;
+}
+.fa-equals
+{
+    color: blue;
+}
+p
+{
+    display: inline-block;
+    margin: 5px;
+}
+button
+{
+    display: block;
+}
