@@ -1,4 +1,43 @@
-body
-{
-    background-color: green;
+body {
+    background-color: gray;
+}
+
+.pracownik {
+    display: inline-block;
+    width: 160px;
+}
+
+.czas {
+    width: 70px;
+}
+
+.stawka {
+    width: 70px;
+}
+
+.wyplata {
+    width: 70pxl
+}
+
+#tytul-pracownik {
+    display: inline-block;
+    width: 160px;
+}
+
+#tytul-czas {
+    display: inline-block;
+    width: 70px;
+}
+
+#tytul-stawka {
+    display: inline-block;
+    width: 70px;
+}
+
+#tytul-wyplata {
+    display: inline-block;
+    width: 70px;
+}
+span{
+    font-weight: 700;
 }
