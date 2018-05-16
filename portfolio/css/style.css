@@ -177,6 +177,7 @@ img[alt="author"] {
 
 #skill-icons figure {
     display: inline-block;
+    margin: 0 25px;
 }
 
 #skill-icons figure figcaption {
