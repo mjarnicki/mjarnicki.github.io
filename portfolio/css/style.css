@@ -13,6 +13,7 @@ span {
     color: #1ac056;
 }
 
+
 #header-container {
     position: relative;
     margin-left: auto;
@@ -29,7 +30,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 59px;
+    height: 64px;
     background-color: grey;
     opacity: 0.8;
     z-index: 2;
@@ -58,7 +59,9 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #1ac056;
+    text-decoration: none;
     opacity: 0.8;
+    color: white;
 }
 
 #menu-responsive {
@@ -101,7 +104,7 @@ header h1 {
     margin: 0px;
 }
 
-.about-me {
+#about-me {
     position: relative;
     left: -1200px;
     margin-left: auto;
@@ -191,7 +194,9 @@ img[alt="author"] {
     overflow: hidden;
     padding: 0 0 100px 0;
 }
-
+.row {
+margin: 0;
+}
 .portfolio-icons-container {
     margin-left: auto;
     margin-right: auto;
@@ -209,22 +214,25 @@ img[alt="author"] {
     background-position: center;
 }
 
-.icon1 {
+#icon1 {
     background-image: url(../img/redaguje.JPG);
     background-position: left top;
     left: -500px;
+    padding: 0;
     transition: all 0.3s linear;
 }
 
-.icon2 {
+#icon2 {
     background-image: url(../img/maze.jpg);
     top: 500px;
+    padding: 0;
     transition: all 0.3s linear;
 }
 
-.icon3 {
+#icon3 {
     background-image: url(../img/portfolio1.jpg);
     right: -500px;
+    padding: 0;
     transition: all 0.3s linear;
 }
 
@@ -255,6 +263,7 @@ img[alt="author"] {
 .portfolio-icon-content {
     height: 360px;
     width: 100%;
+    padding: 5px;
     border: 1px solid white;
     position: relative;
     text-align: center;
@@ -263,6 +272,7 @@ img[alt="author"] {
 
 .portfolio-icon-content h4 {
     font-size: 20px;
+    margin: 25px;
 }
 
 #contact {
@@ -271,7 +281,6 @@ img[alt="author"] {
 
 #contact-data {
     float: left;
-    width: 50%;
     height: 450px;
     padding-left: 5%;
     background-color: #213b50;
@@ -407,6 +416,7 @@ img[alt="author"] {
 
 .roll-up:hover {
     background-color: #3ceb78;
+    color: white;
 }
 
 .roll-up-slide {

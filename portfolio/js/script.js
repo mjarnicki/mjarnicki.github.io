@@ -20,9 +20,9 @@
          };
 
          if (position > 100) {
-             $(".about-me").addClass("about-me-slide");
+             $("#about-me").addClass("about-me-slide");
          } else {
-             $(".about-me").removeClass("about-me-slide");
+             $("#about-me").removeClass("about-me-slide");
          }
 
          var skillPosition = $(".skill").offset().top - $(".skill").outerHeight();
@@ -34,14 +34,14 @@
          
          var portfolioPosition = $(".portfolio-icons-container").offset().top - $(".portfolio-icons-container").outerHeight();
          if (position > portfolioPosition){
-            $(".icon1").addClass("portfolio-slide-1");
-            $(".icon2").addClass("portfolio-slide-2");
-            $(".icon3").addClass("portfolio-slide-3");
+            $("#icon1").addClass("portfolio-slide-1");
+            $("#icon2").addClass("portfolio-slide-2");
+            $("#icon3").addClass("portfolio-slide-3");
          }
          else{
-            $(".icon1").removeClass("portfolio-slide-1");
-            $(".icon2").removeClass("portfolio-slide-2");
-            $(".icon3").removeClass("portfolio-slide-3");
+            $("#icon1").removeClass("portfolio-slide-1");
+            $("#icon2").removeClass("portfolio-slide-2");
+            $("#icon3").removeClass("portfolio-slide-3");
          }
      });
 
