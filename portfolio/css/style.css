@@ -88,7 +88,7 @@ header {
 }
 
 header h1 {
-    font-size: 8.5em;
+    font-size: 10vw;
     width: 100%;
     margin: 0;
     color: white;
@@ -100,7 +100,7 @@ header h1 {
     color: white;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
     margin: 0px;
 }
 
