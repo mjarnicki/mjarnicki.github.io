@@ -3,8 +3,8 @@
         $("#sprawdz").on("click", function () {
 
             function showBitcoin(course) {
-                var kupno = course.PLN.buy;
-                var sprzedaz = course.PLN.sell;
+                var kupno = Math.round(course.PLN.buy * 100)/100;
+                var sprzedaz = Math.round(course.PLN.sell * 100)/100;
 
                 var kupnoPoprzednie = $("#kupno").html();
                 var sprzedazPoprzednie = $("#sprzedaz").html();

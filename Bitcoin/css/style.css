@@ -13,9 +13,12 @@
 p
 {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 5px 5px 15px;
 }
-button
-{
+#sprzedaz{
+    margin-bottom: 23px;
+}
+#sprawdz {
     display: block;
+    margin 20px;
 }

@@ -25,7 +25,7 @@ span {
     background-position: center center;
 }
 
-nav {
+#main-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,6 +34,8 @@ nav {
     background-color: grey;
     opacity: 0.8;
     z-index: 2;
+    color: white;
+    padding: 0px;
 }
 
 nav ul {
@@ -147,8 +149,13 @@ img[alt="author"] {
 
 #about-me-article {
     line-height: 1.5;
-    margin: 10px 20px;
+    margin: 10px 00px;
 }
+
+#about-me-article p{
+    margin: 0 5px;
+}
+
 
 .skill {
     position: relative;
@@ -202,6 +209,7 @@ margin: 0;
     margin-right: auto;
     width: 87%;
     text-align: center;
+    margin-top: 20px;
 }
 
 .portfolio-icons {
@@ -258,6 +266,7 @@ margin: 0;
 
 .portfolio-icon-background:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
 .portfolio-icon-content {
