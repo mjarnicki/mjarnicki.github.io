@@ -7,9 +7,9 @@
             var position = window.pageYOffset;
 
             if (position != 0) {
-                $("#main-nav").addClass("main-nav-scroll");
+                $("#main-nav").addClass("bgc-color-change");
             } else {
-                $("#main-nav").removeClass("main-nav-scroll");
+                $("#main-nav").removeClass("bgc-color-change");
             };
 
         });
