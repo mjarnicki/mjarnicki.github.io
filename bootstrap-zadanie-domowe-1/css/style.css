@@ -53,7 +53,7 @@
     margin-top: 50px;
 }
 
-#cell-container {
+.cell-container {
     margin: 0 auto;
     margin-top: 50px;
     width: 250px;
@@ -66,7 +66,7 @@
     text-align: center;
 }
 
-#cell-container img {
+.cell-container img {
     margin-top: 52px;
     width: 219px;
 }
