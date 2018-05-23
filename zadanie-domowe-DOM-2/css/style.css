@@ -1,0 +1,26 @@
+body
+{
+    background-color: darkgoldenrod;
+}
+input{
+    width: 80px;
+}
+span{
+    display: inline-block;
+    width: 160px;
+}
+#title span{
+    display: inline-block;
+    width: 85px;
+}
+#title .uczen{
+    display: inline-block;
+    width: 160px;
+}
+.good{
+    background-color: green;
+    
+}
+.bad{
+    background-color: red;
+}
