@@ -7,17 +7,17 @@
 */
 
 @media (max-width: 992px) {
-/*
+    /*
     #about-me-picture {
         width: 100%;
     }
 */
-/*
+    /*
     img[alt="author"] {
         max-height: inherit;
     }
 */
-/*
+    /*
     .portfolio-icons {
         width: 100%;
     }
@@ -31,7 +31,7 @@
     .contact-form {
         text-align: center;
     }
-/*
+    /*
     #header-container header h1 {
         font-size: 6em;
     }
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 768px) {
-/*
+    /*
     #header-container header h1 {
         font-size: 3em;
     }
@@ -50,14 +50,17 @@
         font-size: 1.5em;
     }
 */
-    #menu-responsive {
+    #header-container #main-nav ul #menu-responsive {
         display: block;
     }
+    /*
     .nav-horizontal-invisible {
         background-color: transparent;
     }
-    nav ul li {
+*/
+    ul li {
         display: none;
+        float: none;
     }
     .horizontal-menu {
         float: none;
@@ -65,7 +68,7 @@
         background-color: grey;
         opacity: 0.8;
     }
-/*
+    /*
     .roll-up {
         bottom: 15px;
         right: 15px;
@@ -74,5 +77,4 @@
         font-size: 35px;
     }
 */
-
 }

@@ -3,7 +3,7 @@
 
      //hide-show top menu 
      $("#menu-responsive").click(function () {
-         $("nav ul li").toggleClass("horizontal-menu")
+         $("#header-container #main-nav ul li ").toggleClass("horizontal-menu")
          $("nav").toggleClass("nav-horizontal-invisible");
      });
      //smooth scrool plugin
