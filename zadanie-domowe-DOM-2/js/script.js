@@ -1,16 +1,7 @@
     'use strict';
     $("document").ready(function () {
-        var ile = 0;
 
         $("#oblicz").click(function () {
-            if (ile <= 1) {
-                oblicz();
-            }
-            ile++;
-        });
-
-
-        function oblicz() {
 
             for (var i = 1; i <= 20; i++) {
                 var matematyka = parseFloat($('#uczen' + i + '').find(".matematyka").val());
@@ -52,6 +43,5 @@
 
                 };
             };
-        };
-
+        });
     });
