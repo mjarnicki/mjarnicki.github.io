@@ -1,0 +1,249 @@
+#hamburger {
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  right: 1.5vw;
+  top: 15px;
+  transition: all 2s linear;
+  z-index: 3; }
+  #hamburger .line {
+    position: absolute;
+    left: 10%;
+    height: 5%;
+    width: 80%;
+    background-color: #fff; }
+  #hamburger #line-1 {
+    top: 14.25%;
+    transition: all 0.2s linear; }
+  #hamburger #line-2-right,
+  #hamburger #line-2-left {
+    top: 47.5%;
+    transition: all 0.2s linear; }
+  #hamburger #line-3 {
+    top: 80.75%;
+    transition: all 0.2s linear; }
+
+.wrapper {
+  padding: 0; }
+
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #1D809F;
+  display: none;
+  position: fixed; }
+  .menu #h4-container {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px; }
+  .menu h4 {
+    line-height: 50px;
+    padding: 15px 0 0 15px;
+    color: white; }
+  .menu ul {
+    list-style-type: none;
+    padding: 0; }
+    .menu ul a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 10px;
+      font-size: 1.4vmax; }
+    .menu ul a:hover {
+      background-color: #4A9AB1; }
+
+.show-menu {
+  display: block; }
+
+.line-1-activated {
+  transform: scaleX(0); }
+
+.line-3-activated {
+  transform: scaleX(0); }
+
+.line-2-right-activated {
+  transform: rotate(-45deg);
+  width: 107%;
+  left: -3%; }
+
+.line-2-left-activated {
+  transform: rotate(45deg);
+  width: 107%;
+  left: -3%; }
+
+#hamburger:hover #line-1 {
+  transform: scaleX(0); }
+
+#hamburger:hover #line-3 {
+  transform: scaleX(0); }
+
+#hamburger:hover #line-2-right {
+  transform: rotate(-45deg);
+  width: 107%;
+  left: -3%; }
+
+#hamburger:hover #line-2-left {
+  transform: rotate(45deg);
+  width: 107%;
+  left: -3%; }
+
+.btn-main {
+  top: 65%;
+  background-color: #1D809F;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 15px 28px;
+  border: 0; }
+
+.btn-main:hover {
+  background-color: #4A9AB1; }
+
+header {
+  background-image: url("../img/bg-masthead.jpg");
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: cover; }
+  header h1 {
+    font-weight: 700;
+    font-size: 60px;
+    padding: 200px 0 60px 0; }
+
+.offer {
+  text-align: center; }
+  .offer h2 {
+    font-size: 30px;
+    margin-top: 150px;
+    font-weight: 700; }
+  .offer .offer-button {
+    margin: 30px 0 100px 0;
+    background-color: #343A40;
+    padding: 15px 30px; }
+  .offer .offer-button:hover {
+    background-color: #454B51; }
+
+.services {
+  text-align: center;
+  width: 100%;
+  background-color: #1D809F; }
+  .services .row {
+    width: 100%; }
+  .services h6 {
+    color: #ECB442;
+    padding-top: 100px;
+    font-weight: 700; }
+  .services h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .services .fas {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #1D809F;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 0 auto;
+    border: 1px solid white;
+    transition: all 0.2s ease-in-out; }
+  .services .fas:hover {
+    color: white;
+    background-color: #1D809F;
+    font-size: 40px; }
+  .services h5 {
+    color: white;
+    margin-top: 15px;
+    font-weight: 700; }
+  .services p {
+    color: #ABD3E0;
+    font-size: 13px; }
+
+#your-website {
+  background-image: url(../img/bg-callout.jpg);
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  #your-website h1 {
+    padding: 150px 0 40px 0;
+    font-weight: 700;
+    margin: 0 auto;
+    width-max: 400px; }
+    #your-website h1 span {
+      font-style: italic; }
+
+#recent-projects {
+  text-align: center; }
+  #recent-projects h5 {
+    color: #ECB442;
+    padding-top: 100px;
+    font-weight: 700; }
+  #recent-projects h1 {
+    font-weight: 700;
+    padding-bottom: 40px; }
+  #recent-projects .portfolio-icon {
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    text-align: left;
+    color: white; }
+    #recent-projects .portfolio-icon h6 {
+      font-weight: 700; }
+  #recent-projects #portfolio1 {
+    background-image: url(../img/portfolio-1.jpg); }
+  #recent-projects #portfolio2 {
+    background-image: url(../img/portfolio-2.jpg); }
+  #recent-projects #portfolio3 {
+    background-image: url(../img/portfolio-3.jpg); }
+  #recent-projects #portfolio4 {
+    background-image: url(../img/portfolio-4.jpg); }
+
+#resist {
+  width: 100%;
+  background-color: #1D809F;
+  text-align: center;
+  color: white;
+  padding: 120px 0; }
+  #resist .resist-button {
+    margin: 10px;
+    padding: 20px 30px;
+    font-weight: 700;
+    border: 0; }
+  #resist .click {
+    background-color: #F8F9FA;
+    color: black;
+    padding: 20px 40px; }
+  #resist .click:hover {
+    background-color: #4A9AB1;
+    color: #F8F9FA; }
+  #resist .look {
+    background-color: #343A40; }
+  #resist .look:hover {
+    background-color: black; }
+
+#map {
+  height: 350px; }
+
+footer {
+  text-align: center;
+  padding: 80px 0 50px 0; }
+  footer .footer-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1D809F;
+    color: white;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 10px; }
+  footer p {
+    margin-top: 20px; }
