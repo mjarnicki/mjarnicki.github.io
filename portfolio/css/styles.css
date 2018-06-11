@@ -241,7 +241,6 @@ nav ul li a:hover {
 #portfolio .portfolio-icons-container .row #icon4 {
     background-image: url(../img/animacje.jpg);
     background-position: top;
-    background-size: contain;
     /*
     right: -500px;
     transition: all 0.3s linear;
