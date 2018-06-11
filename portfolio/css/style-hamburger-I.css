@@ -1,0 +1,51 @@
+
+#hamburger-I {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+    border: 5px solid black;
+    border-radius: 10%;
+    position: relative;
+    transition: all 2s linear;
+}
+
+.line-I {
+    position: absolute;
+    left: 10%;
+    height: 5%;
+    width: 80%;
+    background-color: #000;
+}
+
+#line-1-I {
+    top: 14.25%;
+    transition: all 0.3s linear;
+
+}
+
+#line-2-I {
+    top: 47.5%;
+    transition: all 0.3s linear;
+}
+
+#line-3-I {
+    top: 80.75%;
+    transition: all 0.3s linear;
+}
+
+#hamburger-I:hover #line-1-I {
+    transform: translateY(-5px) rotate(45deg);
+    width: 107%;
+    transform-origin: 0% 100%;
+}
+
+#hamburger-I:hover #line-3-I {
+    transform: translateY(5px) rotate(-45deg);
+    width: 107%;
+    transform-origin: 0% 0%;
+}
+
+#hamburger-I:hover #line-2-I {
+    transform: scaleX(0);
+}

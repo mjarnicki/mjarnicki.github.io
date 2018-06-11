@@ -1,0 +1,91 @@
+body{
+    background-color: gray;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle
+{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    background-color: black;
+}
+.hole{
+    
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: gray;
+    z-index: 3;
+}
+.pivot{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 4;
+}
+.zab {
+	background-color: black;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 42.5%;
+}
+.skos1 {
+	transform: rotate(45deg);
+}
+.skos2 {
+	transform: rotate(90deg);
+}
+.skos3 {
+	transform: rotate(135deg);
+}
+
+
+.wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    transition-property: transform;
+    transition-duration: 1s;
+    
+}
+.kola-zebate:hover .right {
+	animation-name: rotateright; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.kola-zebate:hover .left{
+	animation-name: rotateleft; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateright {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes rotateleft {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+#circle1{
+    position: relative;
+    left: 17px;
+
+}
+#circle2{
+    position: relative;
+    top: 10px;
+}

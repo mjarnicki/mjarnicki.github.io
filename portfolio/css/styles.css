@@ -183,6 +183,11 @@ nav ul li a:hover {
     margin: 0 25px;
 }
 
+.skill #skill-icons figure img {
+    width: 75px;
+    height: 75px;
+}
+
 .skill #skill-icons figure figcaption {
     margin-top: 15px;
 }
@@ -194,8 +199,7 @@ nav ul li a:hover {
 
 #portfolio {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin: 0 auto;*/
     width: 100%;
     overflow: hidden;
     padding: 0 0 100px 0;
@@ -209,37 +213,90 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-#portfolio .portfolio-icons-container .row {
-    margin: 0;
-}
-
 #portfolio .portfolio-icons-container .row #icon1 {
-    background-image: url(../img/redaguje.JPG);
+    background-image: url(../img/redaguje.png);
     background-position: left top;
+    /*
     left: -500px;
-    padding: 0;
     transition: all 0.3s linear;
+*/
 }
 
 #portfolio .portfolio-icons-container .row #icon2 {
     background-image: url(../img/maze.jpg);
+    /*
     top: 500px;
-    padding: 0;
     transition: all 0.3s linear;
+*/
 }
 
 #portfolio .portfolio-icons-container .row #icon3 {
     background-image: url(../img/portfolio1.jpg);
+    /*
     right: -500px;
-    padding: 0;
     transition: all 0.3s linear;
+*/
 }
+
+#portfolio .portfolio-icons-container .row #icon4 {
+    background-image: url(../img/animacje.jpg);
+    background-position: top;
+    background-size: contain;
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon4:hover {
+    cursor: pointer;
+    
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon5 {
+    background-image: url(../img/3-interactive-agency.png);
+    background-position: top;
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon6 {
+    background-image: url(../img/2-new-age-landing-page.png);
+    background-position: top;
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon7 {
+    background-image: url(../img/4-artists-portfolio.png);
+    background-position: top;
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon8 {
+    background-image: url(../img/portfolio1.jpg);
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
 #portfolio .portfolio-icons-container .row .portfolio-icons {
     position: relative;
     height: 100%;
-    width: 33.33%;
-    display: inline-block;
-    margin: 0;
+    padding: 0;
+    float: left;
     background-size: cover;
     background-position: center;
 }
@@ -260,7 +317,7 @@ nav ul li a:hover {
 }
 
 #portfolio .portfolio-icons-container .row .portfolio-icons .portfolio-icon-background .portfolio-icon-content {
-    height: 360px;
+    height: 100%;
     width: 100%;
     padding: 5px;
     border: 1px solid white;
@@ -274,6 +331,7 @@ nav ul li a:hover {
     margin: 25px;
 }
 
+/*
 .portfolio-slide-1 {
     transform: translateX(500px);
 }
@@ -285,7 +343,80 @@ nav ul li a:hover {
 .portfolio-slide-3 {
     transform: translateX(-500px);
 }
+*/
 
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 2;
+}
+
+.popup-show-hide {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.animations {
+    position: relative;
+    margin: 100px 3% 0 3%;
+    background-color: #f9fcfe;
+     -webkit-box-shadow: 0 0 10px 10px #e7e7e7;
+    -moz-box-shadow: 0 0 10px 10px #e7e7e7;
+    box-shadow: 0 0 10px 10px #e7e7e7;
+    height: 500px;
+    overflow-y:auto;
+}
+/*
+.animations h5{
+    color: white;
+}
+*/
+#close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+#close:hover {
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+}
+.css-animation{
+    padding: 0 10px;
+}
+.squares{
+    margin-right: 30px;
+    max-width: 550px;
+    max-height: 340px;
+    margin: 10px;
+    overflow: hidden;
+}
+.single-square
+{
+    width: 5px;
+    height: 5px;
+    float: left;
+    background-color: gray;
+}
+.single-square-color{
+    background-color: white;
+}
+.btn-secondary{
+    outline: none;
+}
 #contact {
     width: 100%;
 }
