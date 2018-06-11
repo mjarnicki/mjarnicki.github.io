@@ -249,11 +249,6 @@ nav ul li a:hover {
 
 #portfolio .portfolio-icons-container .row #icon4:hover {
     cursor: pointer;
-    
-    /*
-    right: -500px;
-    transition: all 0.3s linear;
-*/
 }
 
 #portfolio .portfolio-icons-container .row #icon5 {
