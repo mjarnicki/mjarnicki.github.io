@@ -20,7 +20,7 @@ span {
     margin-right: auto;
     width: 100%;
     background-size: cover;
-    height: 600px;
+    height: 95vh;
     background-image: url(../img/header-background.jpg);
     background-position: center center;
 }
@@ -110,7 +110,7 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    left: -1200px;
+    left: -5000px;
     overflow: hidden;
     text-align: justify;
     background-color: #f9fcfe;
@@ -118,7 +118,7 @@ nav ul li a:hover {
     -webkit-box-shadow: 0 5px 10px #e7e7e7;
     -moz-box-shadow: 0 5px 10px #e7e7e7;
     box-shadow: 0 5px 10px #e7e7e7;
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
 }
 
 #about-me #about-me-picture {
@@ -145,7 +145,7 @@ nav ul li a:hover {
 }
 
 .about-me-slide {
-    transform: translateX(1200px);
+    transform: translateX(5000px);
 }
 
 .h2-class {
