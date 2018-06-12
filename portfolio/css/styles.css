@@ -110,7 +110,7 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    left: -5000px;
+    left: -100%;
     overflow: hidden;
     text-align: justify;
     background-color: #f9fcfe;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 }
 
 .about-me-slide {
-    transform: translateX(5000px);
+    transform: translateX(100%);
 }
 
 .h2-class {
