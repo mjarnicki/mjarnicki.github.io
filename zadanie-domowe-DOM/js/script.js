@@ -21,6 +21,8 @@ document.getElementById("oblicz").addEventListener("click",function calculateSal
 });
 
 document.getElementById("oblicz").addEventListener("click",function bestEmployer() {
+    
+    
     for (var i = 0; i < 20; i++) {
         var employer = document.getElementsByClassName("pracownik")[i].innerHTML;
         var hours = document.getElementsByClassName("czas")[i].value;
@@ -39,6 +41,7 @@ document.getElementById("oblicz").addEventListener("click",function bestEmployer
         arrayRaw.pop();
         arrayRaw.reverse();
     }
+    
     var firstName = arrayRaw[0].replace(/\d/g, "");
     var secondName = arrayRaw[1].replace(/\d/g, "");
     var thirdName = arrayRaw[2].replace(/\d/g, "");
@@ -46,7 +49,6 @@ document.getElementById("oblicz").addEventListener("click",function bestEmployer
     var firstHours = arrayRaw[0].replace(/[a-zA-ZąĄćĆęĘłŁńŃóÓśŚżŻźŹ]/g, "");
     var secondHours = arrayRaw[1].replace(/[a-zA-ZąĄćĆęĘłŁńŃóÓśŚżŻźŹ]/g, "");
     var thirdHours = arrayRaw[2].replace(/[a-zA-ZąĄćĆęĘłŁńŃóÓśŚżŻźŹ]/g, "");
-    console.log(firstHours);
     
     var firstNode = document.createElement("p"); 
     var firstTextNode = document.createTextNode("Numer 1: " + firstName + " przepracował: " + firstHours + " godzin");  
