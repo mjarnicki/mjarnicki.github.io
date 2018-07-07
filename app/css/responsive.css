@@ -1,0 +1,54 @@
+@media (max-width: 375px) {
+  header .header-title {
+    margin-bottom: 0px;
+    padding-left: 15px; }
+    header .header-title h1 {
+      font-size: 40px; }
+    header .header-title .blue-line {
+      width: 100px;
+      margin-left: 10px; }
+  header .header-social {
+    padding-left: 15px;
+    margin-bottom: 10px; }
+    header .header-social .vertical-line {
+      display: none; }
+    header .header-social .social-icon {
+      display: inline-block;
+      margin: 20px 10px;
+      width: 50px; }
+    header .header-social .header-description .header-big {
+      font-size: 17px;
+      letter-spacing: -1px;
+      word-spacing: 5px;
+      line-height: 33px;
+      margin-bottom: 30px; }
+    header .header-social .header-description .header-small {
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      line-height: 25px; }
+  #main .main-text p .main-aside {
+    width: 100%;
+    float: none;
+    position: static; }
+    #main .main-text p .main-aside .aside-comment {
+      width: 100%;
+      position: static; }
+  #main .main-text #aside-note {
+    width: 100%;
+    height: 180px;
+    position: static; }
+    #main .main-text #aside-note img {
+      position: static;
+      transform: rotate(90deg);
+      margin-bottom: 110px; }
+    #main .main-text #aside-note .aside-note-container {
+      width: 85%;
+      margin: 15px 15px; }
+      #main .main-text #aside-note .aside-note-container p {
+        font-family: serif;
+        text-align: left;
+        letter-spacing: 0;
+        font-size: 14px;
+        line-height: 18px; }
+  #main hr {
+    display: block; } }

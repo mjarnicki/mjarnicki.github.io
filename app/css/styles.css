@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-weight: 700; }
+
+header {
+  margin-top: 100px; }
+  header .header-title {
+    margin-bottom: 80px;
+    padding-left: 65px; }
+    header .header-title h1 {
+      font-size: 60px;
+      display: inline-block;
+      margin: 0;
+      font-weight: 700; }
+    header .header-title .blue-line {
+      width: 200px;
+      background-color: #348DB2;
+      height: 4px;
+      margin-left: 42px;
+      position: absolute;
+      top: 50%;
+      display: inline-block; }
+  header .header-social {
+    padding-left: 65px;
+    padding-bottom: 16px; }
+    header .header-social .short {
+      width: 2px;
+      background-color: #E5E5E5;
+      margin-left: 8px;
+      height: 13%; }
+    header .header-social .long {
+      width: 2px;
+      background-color: #E5E5E5;
+      margin-left: 8px;
+      height: 51%; }
+    header .header-social .social-icon {
+      height: 12%;
+      display: block;
+      position: relative; }
+      header .header-social .social-icon img {
+        position: absolute;
+        top: 50%;
+        width: 18px;
+        transform: translateY(-50%); }
+  header .header-description {
+    text-align: justify; }
+    header .header-description .header-big {
+      font-size: 25px;
+      letter-spacing: -1px;
+      word-spacing: 5px;
+      line-height: 45px;
+      margin-bottom: 60px; }
+    header .header-description .header-small {
+      font-size: 15px;
+      letter-spacing: 0.6px;
+      line-height: 29px;
+      text-align: justify; }
+
+#main .main-text {
+  position: absolute; }
+  #main .main-text p {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 29px;
+    text-align: justify; }
+    #main .main-text p .main-aside {
+      width: 100px;
+      float: right;
+      position: relative;
+      right: -100px; }
+      #main .main-text p .main-aside .aside-comment {
+        padding: 10px 0 0 30px;
+        width: 240px;
+        position: relative;
+        right: 100px; }
+        #main .main-text p .main-aside .aside-comment h2 {
+          font-size: 40px;
+          font-weight: 700;
+          letter-spacing: -3px; }
+        #main .main-text p .main-aside .aside-comment .blue-line {
+          width: 70px;
+          background-color: #348DB2;
+          height: 4px;
+          margin: 20px 0 30px 0;
+          display: block; }
+        #main .main-text p .main-aside .aside-comment p {
+          font-family: serif;
+          text-align: left;
+          letter-spacing: 0;
+          font-size: 18px; }
+  #main .main-text img {
+    width: 100%;
+    margin: 20px 0; }
+  #main .main-text #aside-note {
+    width: 250px;
+    position: absolute;
+    right: -250px; }
+    #main .main-text #aside-note img {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin: 0;
+      position: absolute;
+      top: 7px; }
+    #main .main-text #aside-note .aside-note-container {
+      display: inline-block;
+      width: 200px;
+      margin-left: 45px; }
+      #main .main-text #aside-note .aside-note-container p {
+        font-family: serif;
+        text-align: left;
+        letter-spacing: 0;
+        font-size: 18px; }
+
+#main hr {
+  border-width: 2px;
+  border-color: black;
+  display: none;
+  margin-bottom: 0; }

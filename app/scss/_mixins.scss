@@ -1,0 +1,13 @@
+@mixin main-text {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 29px;
+    text-align:justify;
+}
+
+@mixin vertical-line($height) {
+    width: 2px;
+    background-color: #E5E5E5;
+    margin-left: 8px;
+    height: $height;
+}
