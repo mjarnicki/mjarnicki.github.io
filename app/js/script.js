@@ -1,5 +1,10 @@
 var d = new Date()
-var visibleMonth = d.getMonth()
+var currentMonth = d.getMonth()
+var currentYear = d.getFullYear()
+
+var monthArray = ["january", "february", "march", "april", "may", "jun", "july", "april", "september", "october", "november", "december"];
+
+
 
 function getMonthInfo(year, month) {
     var firstDay = new Date(year, month, 1).getDay()
@@ -10,44 +15,31 @@ function getMonthInfo(year, month) {
     }
 }
 
-function getShift(day) {
-    if (day == 0) {
-        return 6
-    } else {
-        return day - 1
-    }
-}
-
-function getShiftWojtek(day) {
-    return (day + 6) % 7
-}
-
-
 
 //------------------------------------------------------------
 
 $(function () {
+
+    //    pozycja komentarza na marginesie
     var $notes = $(".note")
-    
+
     var notesPositionAbsolute = $notes.first().offset().top;
     var notesParentPosition = $(".main-text").offset().top;
     var notesPosition = notesPositionAbsolute - notesParentPosition;
-//    console.log(notesPosition);
-//    console.log(notesParentPosition);
-    
-    
+
+
     $("#aside-note").css("top", notesPosition + "px");
-    
-    //wyświetlanie komentarza
+
+    //wyświetlanie komentarza na marginesie
     $.each($notes, function (i, el) {
         var elem = $(el)
         var text = elem.text()
 
         elem.text(" (" + (i + 1) + ") ")
-        $(".aside-note-container").append("<p>" + (i+1) + ". " + text + "</p>")
+        $(".aside-note-container").append("<p>" + (i + 1) + ". " + text + "</p>")
     })
-    
-    //koniec wyświetlania komentarza
+
+    //wyświetlanie dodatkowego komentarza 
 
     var $aside = $(".aside");
 
@@ -73,36 +65,45 @@ $(function () {
         },
     })
 
+    $("#right").click(function () {
+        currentMonth++;
+        console.log(currentMonth);
+    })
+    
+     $("#left").click(function () {
+        currentMonth--;
+        console.log(currentMonth);
+    })
+
     // początek renderowania miesiąca
+    
+    $("#month").text(monthArray[currentMonth]);
+    
+    var monthInfo = getMonthInfo(currentYear, 0);
 
-    var monthInfo = getMonthInfo(d.getFullYear(), d.getMonth());
-
-    console.log(monthInfo.firstDay);
-    console.log(monthInfo.daysCount);
-
-    console.log("dzień ", d.getDay())
-    console.log(getShift(monthInfo.firstDay))
-
-    var shiftCount = getShift(monthInfo.firstDay);
-
-    for (var shift = 1; shift <= getShift(monthInfo.firstDay); shift++) {
-        $("#calendar").append(" # ");
+    for (var shift = 0; shift < monthInfo.firstDay; shift++) {
+        $("#month-days").append('<div class="day-container"><div class="day"></div></div>');
     }
+
     for (var fd = 1; fd <= monthInfo.daysCount; fd++) {
-        if (fd == d.getDay()) {
-            $("#calendar").append(" (" + fd + ") ");
-        } else {
-            $("#calendar").append(" " + fd + " ");
-        }
+        $('#month-days').append('<div class="day-container"><div class="day" id="' + fd + '">' + fd + '</div></div>');
+    };
 
-        if ((shiftCount + fd) % 7 == 0) {
-            $("#calendar").append("<br>");
-        }
+    for (var ia = 1; ia < d.getDate(); ia++) {
+        $("#" + ia + "").addClass("inactive").removeClass("day");
     }
 
-    // koniec renderowania miesiąca
+    $("#" + d.getDate() + "").addClass("current");
+
+    $('.day').click(function () {
+        $('.day').removeClass("current")
+        $(this).toggleClass('current');
+    });
 
 
+
+    //+ currentYear + "." + (currentMonth +1 ) + "." 
+    // + currentYear + "." + (currentMonth +1 ) + "."
 
 
 })
