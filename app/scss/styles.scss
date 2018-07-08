@@ -108,6 +108,7 @@ header {
             width: 250px;
             position: absolute;
             right: -250px;
+            padding-top: 25px;
             img {
                 width: 15px;
                 height: 15px;
@@ -189,7 +190,6 @@ header {
                     cursor: pointer;
                     margin: 1%;
                     position: relative;
-                    border-radius: 50%;
                     .day {
                         position: absolute;
                         width: 100%;
