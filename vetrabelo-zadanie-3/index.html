@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        .three{
+            background-color: green;
+        }
+        .five{
+            background-color: orange;
+        }
+        .three-and-five{
+            background-color: red;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             for (var i = 1; i <= 100; i++) {
                 if (((i % 3) == 0) && ((i % 5) == 0)) {
-                    $("#result").append("<p>AB</p>")
+                    $("#result").append('<p class="three-and-five">AB</p>')
                 }
                 else if ((i % 3) == 0) {
-                    $("#result").append("<p>A</p>")
+                    $("#result").append('<p class="three">A</p>')
                 }
                 else if ((i % 5) == 0) {
-                    $("#result").append("<p>B</p>")
+                    $("#result").append('<p class="five">B</p>')
                 }
                 else  {
                     $("#result").append("<p>" + i + "</p>")
