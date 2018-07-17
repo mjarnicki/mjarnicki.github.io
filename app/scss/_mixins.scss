@@ -2,7 +2,7 @@
     font-size: 15px;
     letter-spacing: 0.6px;
     line-height: 29px;
-    text-align:justify;
+    text-align: justify;
 }
 
 @mixin vertical-line($height) {
@@ -11,6 +11,12 @@
     margin-left: 8px;
     height: $height;
 }
-@mixin day-container{
-    
+
+@mixin day-container {
+    height: 100%;
+    float: left;
+    width: 14.2%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
 }

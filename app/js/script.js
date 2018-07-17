@@ -19,6 +19,8 @@ $(function () {
     var notesPosition = notesPositionAbsolute - notesParentPosition;
 
 
+
+
     $("#aside-note").css("top", notesPosition + "px");
 
     //wyświetlanie komentarza na marginesie
@@ -44,28 +46,24 @@ $(function () {
         elem.append('<div class="main-aside"><div class="aside-comment"><h2>' + title + '</h2><div class="blue-line"></div>             <p>' + text + '</p></div></div>');
     });
 
-    $.ajax({
-        url: "http://localhost/projekt/app/api/calendar",
-        dataType: "json",
-        success: function (response) {
-            console.log(response);
-        },
-    })
 
-//    zmiana miesiąca do przodu
+
+    //    zmiana miesiąca do przodu
     $("#right").click(function () {
         currentMonth++;
+        $(".week-day").remove();
         $(".day-container").remove();
         otherMonth();
     })
-//zmiana miesiąca wstecz
+    //zmiana miesiąca wstecz
     $("#left").click(function () {
         currentMonth--;
+        $(".week-day").remove();
         $(".day-container").remove();
         otherMonth();
     })
 
-//"łapanie" dnia tygodnia pierwszego dnia miesiąca i ilości dni w miesiacu
+    //"łapanie" dnia tygodnia pierwszego dnia miesiąca i ilości dni w miesiacu
     function getMonthInfo(year, month) {
         var firstDay = new Date(year, month, 1).getDay()
         var daysCount = new Date(year, month + 1, 0).getDate()
@@ -84,42 +82,63 @@ $(function () {
 
         //      wpisywanie opisów dni tygodnia
         for (var wd = 0; wd <= 6; wd++) {
-            $("#month-days").append('<div class="day-container"><div class="name">' + weekArray[wd] + '</div></div>');
+            $("#month-days").append('<div class="week-day"><div class="name">' + weekArray[wd] + '</div></div>');
         }
 
         //      wypisywanie "pustych" dni
         for (var shift = 0; shift < monthInfo.firstDay; shift++) {
-            $("#month-days").append('<div class="day-container"><div class="day"></div></div>');
+            $('#month-days').append('<div class="day-container"><div class="inactive"></div></div>');
         }
         //      generowanie dni miesiąca
         for (var fd = 1; fd <= monthInfo.daysCount; fd++) {
-            $('#month-days').append('<div class="day-container"><div class="day" id="' + fd + '">' + fd + '</div></div>');
+            $('#month-days').append('<div class="day-container active"><div class="day">' + fd + '</div></div>');
         };
-        
+
         //      zaznaczanie poprzednich dni
-        
-//        w obecnym miesiącu
+
+        //        w obecnym miesiącu
         if (d.getMonth() == currentMonth) {
-            for (var ia = 1; ia < d.getDate(); ia++) {
-                $("#" + ia + "").addClass("inactive").removeClass("day");
-//                zaznaczanie aktualnego dnia
-                $("#" + d.getDate() + "").addClass("current");
+            for (var ia = 0; ia < (d.getDate() - 1); ia++) {
+                $(".day-container").eq((ia)).addClass("inactive").removeClass("active");
+                //                zaznaczanie aktualnego dnia
+                $(".day-container").eq(d.getDate() - 1).addClass("current");
             }
         }
-//        w poprzednich miesiącach
-        else if (d.getMonth() > currentMonth)
-        {
-            $(".day").addClass("inactive").removeClass("day");
+        //        w poprzednich miesiącach
+        else if (d.getMonth() > currentMonth) {
+            $(".day-container").addClass("inactive").removeClass("active");
         }
-      
-        
-//          zaznaczanie innego dowolnego dnia
-        $('.day').click(function () {
-            $('.day').removeClass("current")
+
+        //          zaznaczanie innego dowolnego dnia
+        $('.active').click(function () {
+            $('.day-container').removeClass("current")
             $(this).toggleClass('current');
         });
+
+
+        $.ajax({
+            url: "http://localhost/projekt/app/api/calendar",
+            dataType: "json",
+            success: function (response) {
+
+                for (var i = 0; i < response.length; i++) {
+
+                    if ((response[i].month-1) == currentMonth) {
+                        $('.day-container').eq(response[i].day + monthInfo.firstDay -1).append('<div class="circle"></div>');
+                    }
+
+                }
+            }
+        })
+
     }
 
     otherMonth();
+
+
+
+    $("#check").click(function () {
+        console.log($(".current").text() + "." + (currentMonth + 1))
+    });
 
 })

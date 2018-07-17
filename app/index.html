@@ -69,17 +69,31 @@
                     </div>
                     <div class="month-days-container">
                         <div id="month-days">
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-12">
-                <div class="form-container"></div>
+                <div class="form-container">
+                    <form action="post">
+                        <input type="email" placeholder="e-mail">
+                        <select name="city" id="city">
+                          <option>Oslo</option>
+                          <option>Bergen</option>
+                          <option>Trontheim</option>
+                          <option>Bodo</option>
+                        </select>
+                        <select name="hotel" id="hotel">
+                            <option>Grand Hotel</option>
+                        </select>
+                        <input type="submit" class="submit" value="BOOK">
+                        
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    <div id="calendar"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
