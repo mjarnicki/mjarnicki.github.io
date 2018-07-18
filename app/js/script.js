@@ -117,7 +117,7 @@ $(function () {
 
 
         $.ajax({
-            url: "http://localhost/projekt/app/api/calendar",
+            url: "https://mjarnicki.github.io/app/api/calendar",
             dataType: "json",
             success: function (response) {
 
