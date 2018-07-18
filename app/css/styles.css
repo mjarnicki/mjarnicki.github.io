@@ -210,25 +210,33 @@ header {
     border-radius: 20px;
     background-color: white;
     padding-top: 15%; }
-    #reservation .form-container input, #reservation .form-container select {
+    #reservation .form-container input,
+    #reservation .form-container select {
       margin: 3% auto;
       width: 85%;
       display: block;
-      line-height: 60px;
       background-color: #EAF3F7;
       border-radius: 200px;
       border: 0;
-      padding: 0 30px 0 30px;
-      outline: none; }
-      #reservation .form-container input::placeholder, #reservation .form-container select::placeholder {
+      padding: 4% 30px 4% 30px;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+      #reservation .form-container input::placeholder,
+      #reservation .form-container select::placeholder {
+        color: black; }
+      #reservation .form-container input:-moz-placeholder,
+      #reservation .form-container select:-moz-placeholder {
+        color: black; }
+      #reservation .form-container input:-ms-input-placeholder,
+      #reservation .form-container select:-ms-input-placeholder {
         color: black; }
     #reservation .form-container select {
-      height: 60px; }
+      background: url(../img/arrows.png) no-repeat right #EAF3F7;
+      background-size: 5%;
+      background-position: 95%; }
     #reservation .form-container .submit {
       margin: 9% auto;
       background-color: #348DB2;
       color: white; }
-
-.color {
-  background-color: green;
-  border-radius: 50%; }

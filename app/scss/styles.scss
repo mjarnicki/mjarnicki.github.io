@@ -206,7 +206,7 @@ header {
                         top: 50%;
                         transform: translateY(-50%);
                     }
-                    .circle{
+                    .circle {
                         height: 15%;
                         width: 15%;
                         border-radius: 50%;
@@ -239,32 +239,38 @@ header {
         border-radius: 20px;
         background-color: white;
         padding-top: 15%;
-        input, select{
+        input,
+        select {
             margin: 3% auto;
             width: 85%;
             display: block;
-            line-height: 60px;
             background-color: #EAF3F7;
             border-radius: 200px;
             border: 0;
-            padding: 0 30px 0 30px;
+            padding: 4% 30px 4% 30px;
             outline: none;
-            &::placeholder{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            &::placeholder {
+                color: black;
+            }
+            &:-moz-placeholder{
+                color: black;
+            }
+            &:-ms-input-placeholder{
                 color: black;
             }
         }
-        select{
-            height: 60px;
+        select {
+            background: url(../img/arrows.png) no-repeat right #EAF3F7;
+            background-size: 5%;
+            background-position: 95%;
         }
-        .submit{
+        .submit {
             margin: 9% auto;
             background-color: #348DB2;
             color: white;
         }
     }
-}
-
-.color {
-    background-color: green;
-    border-radius: 50%;
 }

@@ -76,16 +76,18 @@
             </div>
             <div class="col-lg-3 col-12">
                 <div class="form-container">
-                    <form action="post">
-                        <input type="email" placeholder="e-mail">
-                        <select name="city" id="city">
+                    <form action="post" target="_blank">
+                        <input id="email" type="email" placeholder="e-mail" required>
+                        <select name="city" id="city" required>
                           <option>Oslo</option>
                           <option>Bergen</option>
                           <option>Trontheim</option>
                           <option>Bodo</option>
                         </select>
-                        <select name="hotel" id="hotel">
+                        <select name="hotel" id="hotel" required>
                             <option>Grand Hotel</option>
+                            <option>Cab Inn</option>
+                            <option>Holiday Inn</option>
                         </select>
                         <input type="submit" class="submit" value="BOOK">
                         

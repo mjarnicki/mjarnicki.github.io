@@ -117,28 +117,74 @@ $(function () {
 
 
         $.ajax({
-            url: "https://mjarnicki.github.io/app/api/calendar",
+            url: "http://localhost/projekt/app/api/calendar",
             dataType: "json",
             success: function (response) {
 
                 for (var i = 0; i < response.length; i++) {
 
-                    if ((response[i].month-1) == currentMonth) {
-                        $('.day-container').eq(response[i].day + monthInfo.firstDay -1).append('<div class="circle"></div>');
+                    if ((response[i].month - 1) == currentMonth) {
+                        $('.day-container').eq(response[i].day + monthInfo.firstDay - 1).removeClass("active").append('<div class="circle"></div>');
                     }
-
                 }
+            }
+        })
+
+        function hotels(hotelList) {
+            var hotelNames = hotelList.split(",");
+            var hotelNumber = hotelNames.length;
+            var listElement = 0;
+            $("#hotel > option").remove();
+            for (var i = 0; i < hotelNumber; i++) {
+                listElement += $("#hotel").append(listElement += "<option>" + hotelNames[i] + "</option>");
+            }
+            return listElement;
+        }
+
+        $("#city").change(function () {
+            var selectedCity = "#city > option:selected";
+
+
+            if ($(selectedCity).text() == "Oslo") {
+
+                hotels("Grand Hotel,Cab Inn,Holiday Inn");
+
+            } else if ($(selectedCity).text() == "Bergen") {
+
+                hotels("Bergen Otel,Candle Keep,Bouncing Pony");
+
+            } else if ($(selectedCity).text() == "Trontheim") {
+
+                hotels("Trontheim Apartments,Lonely Dragon,Hogsmeade");
+
+            } else if ($(selectedCity).text() == "Bodo") {
+
+                hotels("Bodo Cheap Rooms,Hostel Exclusive");
             }
         })
 
     }
 
     otherMonth();
+    
+    $(".submit").click(function(){
+        
+        console.log(JSON.stringify({
+        "e-mail": $("#email").val(),
+        "city": $("#city > option:selected").text(),
+        "hotel": $("#hotel > option:selected").text(),
+        "month": (currentMonth + 1),
+        "day": $(".current").text()
+  }))
+
+})
+    
+    
 
 
-
-    $("#check").click(function () {
-        console.log($(".current").text() + "." + (currentMonth + 1))
-    });
+    
+    //    $("#check").click(function () {
+    //        console.log($(".current").text() + "." + (currentMonth + 1))
+    //    });
 
 })

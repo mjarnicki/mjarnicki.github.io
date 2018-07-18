@@ -1,34 +1,58 @@
 [
     {
+        "e-mail": "jan.kowalski@wp.pl",
+        "city": "Oslo",
+        "hotel": "grand",
         "month": 5,
         "day": 3
   },
     {
+        "e-mail": "kicia94@o2.pl",
+        "city": "Bergen",
+        "hotel": "grand",
         "month": 5,
         "day": 6
   },
     {
+        "e-mail": "john-smith@gmail.com",
+        "city": "Trontheim",
+        "hotel": "grand",
         "month": 6,
         "day": 7
   },
     {
+        "e-mail": "hcura@gmail.com",
+        "city": "Bodo",
+        "hotel": "grand",
         "month": 6,
         "day": 8
   },
     {
+        "e-mail": "jan.kowalski@wp.pl",
+        "city": "Oslo",
+        "hotel": "grand",
         "month": 7,
         "day": 9
   },
     {
+        "e-mail": "jan.kowalski@wp.pl",
+        "city": "Bodo",
+        "hotel": "grand",
         "month": 7,
         "day": 10
   },
    {
+       "e-mail": "jan.kowalski@wp.pl",
+        "city": "Bergen",
+        "hotel": "grand",
         "month": 9,
         "day": 23
   }
   ,
    {
+       "e-mail": "jan.kowalski@wp.pl",
+        "city": "Trontheim",
+        "hotel": "grand",
         "month": 10,
         "day": 24
   }
