@@ -1,27 +1,6 @@
-/*
-@media (max-width: 1200px) {
-    .portfolio-icons {
-        width: 50%;
-    }
-}
-*/
 
 @media (max-width: 992px) {
-/*
-    #about-me-picture {
-        width: 100%;
-    }
-*/
-/*
-    img[alt="author"] {
-        max-height: inherit;
-    }
-*/
-/*
-    .portfolio-icons {
-        width: 100%;
-    }
-*/
+
     #contact-data .h2-class {
         text-align: center;
     }
@@ -30,26 +9,12 @@
     }
     .contact-form {
         text-align: center;
+        
     }
-/*
-    #header-container header h1 {
-        font-size: 6em;
-    }
-    #header-container header #h2-header {
-        font-size: 3em;
-    }
-*/
-}
+} 
 
 @media (max-width: 768px) {
-/*
-    #header-container header h1 {
-        font-size: 3em;
-    }
-    #header-container header #h2-header {
-        font-size: 1.5em;
-    }
-*/
+
     #menu-responsive {
         display: block;
     }
@@ -65,14 +30,4 @@
         background-color: grey;
         opacity: 0.8;
     }
-/*
-    .roll-up {
-        bottom: 15px;
-        right: 15px;
-        width: 40px;
-        line-height: 40px;
-        font-size: 35px;
-    }
-*/
-
 }
