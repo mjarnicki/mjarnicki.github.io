@@ -7,76 +7,64 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#circle
+.circle
 {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
     background-color: black;
 }
-#hole{
+.hole{
     
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
     background-color: gray;
     z-index: 3;
 }
-#pivot{
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+.pivot{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
     background-color: black;
     z-index: 4;
 }
 .zab {
 	background-color: black;
     position: absolute;
-    height: 30px;
-    width: 200px;;
-    top: 85px;
+    height: 15%;
+    width: 100%;
+    top: 42.5%;
 }
-#skos1 {
+.skos1 {
 	transform: rotate(45deg);
 }
-#skos2 {
+.skos2 {
 	transform: rotate(90deg);
 }
-#skos3 {
+.skos3 {
 	transform: rotate(135deg);
 }
 
 
-.container-right{
+.wrapper{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     transition-property: transform;
     transition-duration: 1s;
-    margin-top: 50px;
     
 }
-html:hover .container-right {
+html:hover .right {
 	animation-name: rotateright; 
     animation-duration: 2s; 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.container-left{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
-    width: 200px;
-    transition-property: transform;
-    transition-duration: 1s;
-    margin-top: 50px;
-    
-}
-html:hover .container-left{
+html:hover .left{
 	animation-name: rotateleft; 
     animation-duration: 2s; 
     animation-iteration-count: infinite;
@@ -91,13 +79,14 @@ html:hover .container-left{
     from {transform: rotate(0deg);}
     to {transform: rotate(-360deg);}
 }
+
 #circle1{
-    position: fixed;
+    position: relative;
     left: 400px;
     top: 150px;
 }
 #circle2{
-    position: fixed;
+    position: relative;
     left: 500px;
     top: 0px;
 }

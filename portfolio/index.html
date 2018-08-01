@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
 
     <!--    style-->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-kola.css">
+    <link rel="stylesheet" href="css/style-hamburger-I.css">
+    <link rel="stylesheet" href="css/style-hamburger-II.css">
     <!--    responsive-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -51,7 +53,7 @@
             <article class="col-lg-6 col-12" id="about-me-article">
                 <p>Z wykształcenia jestem specjalistą do spraw jakości żywności, obecnie pracuję w dziale zakupów w sieci hurtowni, ale to programowanie stało się moim hobby, które chciałbym zamienić w pracę. Od zawsze lubiłem majsterkować. Niestety aby cokolwiek stworzyć potrzebne są odpowiednie warunki, narzędzia i materiały, do których często jest ograniczony dostęp. Natomiast programując jedyne co mi jest potrzebne, to chwila ciszy i komputer. A jedyne, co mnie ogranicza, to własna wyobraźnia. Programowaniem zaraziłem się mniej więcej rok temu i od tamtego czasu nieustannie uczę się nowych technologii i poszerzam swoje doświadczenie.</p>
 
-                <p>Obecnie jestem w trakcie intensywnego szkolenia na Front-End Web developera prowadzonego przez Akademię108, w czasie którego usystematyzuję zdobyta już wiedzę i poznam podstawy nieznanych mi jeszcze technologii. Zakończenie kursu planowane jest na 27 maja. Obecnie poszukuję pracy jako Junior Front-End developer która przede wszystkim pozwoli zdobyć jak największe doświadczenie.</p>
+                <p>Pod koniec maja ukończyłem kurs na Front End Developera prowadzonego przez Akademię 108 z wynikiem 98%. Obecnie poszukuję pracy jako Junior Front-End developer która przede wszystkim pozwoli zdobyć jak największe doświadczenie.</p>
             </article>
         </div>
     </section>
@@ -60,7 +62,7 @@
             Moje <span>umiejętności</span>
         </h2>
         <article id="skill-description">
-            Poniżej przedstawiam umiejętności, jakie poznałem w stopniu umożliwającym zastosowanie w tworzonych projektach. Systematycznie poszrzam swoją wiedzę o nowe technologie. W czasie trwającego bootcampu opanuję także podstawy Ajax, Gulp, preprocesora Sass i Wordpress.
+            Poniżej przedstawiam umiejętności, jakie poznałem w stopniu umożliwającym zastosowanie w tworzonych projektach. Systematycznie poszerzam swoją wiedzę o nowe technologie.
         </article>
         <article id="skill-icons">
             <figure>
@@ -83,6 +85,18 @@
                 <img src="icons/jquery.png" alt="Jquery">
                 <figcaption>jQuery</figcaption>
             </figure>
+            <figure>
+                <img src="icons/ajax.jpg" alt="Ajax">
+                <figcaption>Ajax</figcaption>
+            </figure>
+            <figure>
+                <img src="icons/sass.png" alt="Sass">
+                <figcaption>Sass</figcaption>
+            </figure>
+            <figure>
+                <img src="icons/wordpress.png" alt="Wordpress">
+                <figcaption>Wordpress</figcaption>
+            </figure>
         </article>
     </section>
 
@@ -92,48 +106,156 @@
         </h2>
         <article class="portfolio-icons-container">
             <div class="row">
-                <figure class="portfolio-icons col-lg-4 col-sm-6" id="icon1">
-                    <a href="http://redaguje.com" class="portfolio-icon-background" target="_blank">
-                        <div class="portfolio-icon-content">
-                            <h4>Redaguje.com</h4>
-                            <p>Strona firmy oferującej korekty i redakcje tekstów. Mój pierwszy, prosty projekt. Zastosowałem min. znaczniki semantyczne HTML 5 oraz przyjazne adresy.</p>
-                            <h4>Wykorzystane technologie</h4>
-                            <p>HTML 5, CSS 3, Java Script</p>
-                            <i class="fas fa-cogs fa-3x"></i>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon1">
+                        <a href="http://redaguje.com" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>Redaguje.com</h4>
+                                <p>Strona firmy oferującej korekty i redakcje tekstów. Mój pierwszy, prosty projekt komercyjny. Zastosowałem min. znaczniki semantyczne i przyjazne adresy. </p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3</p>
+                            </div>
+                        </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon2">
+                        <a href="http://aaakowalski.esy.es/labirynt" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>Labirynt</h4>
+                                <p> Gra polegająca na przejściu labiryntu myszką w taki sposób, aby nie wejść na żółte pola. Po każdym uruchomieniu korytarze generowane są losowo.</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, Java Script,
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon3">
+                        <a href="http://aaakowalski.esy.es/letter-counter.html" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>Licznik słów oraz statystyka liter.</h4>
+                                <p> Aplikacja liczaca ilość słów, liter, oraz stron i arkuszy. Dodatkowo liczy jak często w tekście występuje dana litera.</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, jQuery
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon4">
+                        <div class="portfolio-icon-background">
+                            <div class="portfolio-icon-content">
+                                <h4>Zabawy z CSS</h4>
+                                <p>Animacje CSS i nie tylko. Napisane dla rozrywki lub w przerwach w pracy.</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, jQuerry</p>
+                            </div>
                         </div>
-                    </a>
-                </figure><!--            
-        --><figure class="portfolio-icons col-lg-4 col-sm-6" id="icon2">
-                    <a href="http://aaakowalski.esy.es/labirynt" class="portfolio-icon-background" target="_blank">
-                        <div class="portfolio-icon-content">
-                            <h4>Labirynt</h4>
-                            <p> Gra polegająca na przejściu labiryntu myszką w taki sposób, aby nie wejść na żółte pola. Po każdym uruchomieniu korytarze generowane są losowo. Liczony jest także czas przejścia.</p>
-                            <h4>Wykorzystane technologie</h4>
-                            <p>HTML 5, CSS 3, Java Script,
-                            </p>
-                            <i class="fas fa-cogs fa-3x"></i>
-                        </div>
-                    </a>
-                </figure><!--
-        --><figure class="portfolio-icons icon3 col-lg-4 col-sm-6" id="icon3">
-                    <a href="http://aaakowalski.esy.es/letter-counter.html" class="portfolio-icon-background" target="_blank">
-                        <div class="portfolio-icon-content">
-                            <h4>Licznik słów oraz statystyka liter.</h4>
-                            <p> Aplikacja liczaca ilość słów, liter, oraz stron i arkuszy. Dodatkowo liczy jak często w tekście występuje dana litera, zwraca jej procentowy udział oraz rysuje wykres słupkowy.</p>
-                            <h4>Wykorzystane technologie</h4>
-                            <p>HTML 5, CSS 3, jQuery
-                            </p>
-                            <i class="fas fa-cogs fa-3x"></i>
-                        </div>
-                    </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon5">
+                        <a href="https://mjarnicki.github.io/bootstrap-zadanie-domowe-2/index.html" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>"Interactive Agency"</h4>
+                                <p>Szablon strony zakodowany na podstawie pliku graficznego.</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, jQuerry, Bootstrap</p>
+                            </div>
+                        </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon6">
+                        <a href="https://mjarnicki.github.io/bootstrap-zadanie-domowe-1/index.html" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>"New Age"</h4>
+                                <p>Szablon strony zakodowany na podstawie pliku graficznego.</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, jQuerry, Bootstrap</p>
+                            </div>
+                        </a>
+                    </div>
+                </figure>
+                <figure class="col-xl-3 col-lg-4 col-sm-6 col-12 px-2">
+                    <div class="portfolio-icons" id="icon7">
+                        <a href="https://mjarnicki.github.io/bootstrap-zadanie-domowe-3/index.html" class="portfolio-icon-background" target="_blank">
+                            <div class="portfolio-icon-content">
+                                <h4>"Stylish Portfolio"</h4>
+                                <p>Szablon strony zakodowany na podstawie pliku graficznego. Autorska animacja "hamburger menu".</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>HTML 5, CSS 3, jQuerry, Bootstrap, Sass</p>
+                            </div>
+                        </a>
+                    </div>
                 </figure>
             </div>
         </article>
+        <aside class="popup">
+            <div class="animations">
+                <div id="close"><i class="fas fa-times cross"></i></div>
+                <div class="container-fluid pt-5">
+                    <div class="row">
+                        <div class="col-lg-2 px-2 kola-zebate">
+                            <h5 class="text-center">Koła zębate</h5>
+                            <div class="wrapper right" id="circle2">
+                                <div class="zab skos1"></div>
+                                <div class="zab skos2"></div>
+                                <div class="zab skos3"></div>
+                                <div class="zab"></div>
+
+                                <div class="center circle"></div>
+                                <div class="center hole"></div>
+                                <div class="center pivot"></div>
+                            </div>
+                            <div class="wrapper left" id="circle1">
+
+                                <div class="zab skos1"></div>
+                                <div class="zab skos2"></div>
+                                <div class="zab skos3"></div>
+                                <div class="zab"></div>
+
+                                <div class="center circle"></div>
+                                <div class="center hole"></div>
+                                <div class="center pivot"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-2">
+                            <h5 class="text-center">Hamburger Menu</h5>
+                            <div id="hamburger-I">
+                                <div class="line-I" id="line-1-I"></div>
+                                <div class="line-I" id="line-2-I"></div>
+                                <div class="line-I" id="line-3-I"></div>
+                            </div>
+                            <div id="hamburger-II">
+                                <div class="line-II" id="line-1-II"></div>
+                                <div class="line-II" id="line-2-left-II"></div>
+                                <div class="line-II" id="line-2-right-II"></div>
+                                <div class="line-II" id="line-3-II"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-2">
+
+
+                        </div>
+                        <div class="col-lg-6 px-2 text-center">
+                           <h5 class="text-center">Rysowanie</h5>
+                            <div class="squares">
+                            </div>
+                            <button type="button" class="btn btn-secondary">Rysuj od początku</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </section>
     <footer class="container-fluid" id="contact">
         <div class="row">
             <div class="col-lg-6" id="contact-data">
-                <h2 class="h2-class">
+                <h2 class="h2-class text-center text-lg-left">
                     Maciej <span>Jarnicki</span>
                 </h2>
                 <p>Twarda 60 m 14</p>
@@ -164,6 +286,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script-kwadraty.js"></script>
     <script src="js/script.js"></script>
 </body>
 

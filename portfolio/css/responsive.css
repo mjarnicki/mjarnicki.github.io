@@ -13,16 +13,16 @@
     }
 } 
 
+
 @media (max-width: 768px) {
 
-    #menu-responsive {
+    #header-container #main-nav ul #menu-responsive {
+
         display: block;
     }
-    .nav-horizontal-invisible {
-        background-color: transparent;
-    }
-    nav ul li {
+    ul li {
         display: none;
+        float: none;
     }
     .horizontal-menu {
         float: none;

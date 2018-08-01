@@ -1,0 +1,204 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#bottom-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.bgc-color-change{
+    background-color: RGBa(171, 52, 99, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #F4CC4E;
+}
+
+.navbar-dark .navbar-brand {
+    color: #F4CC4E;
+}
+
+.navbar-dark .navbar-brand:focus {
+    color: #F4CC4E;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    background-image: url(../img/bg-pattern.png), linear-gradient(to right, rgb(220, 36, 48), rgb(122, 67, 150));
+    padding: 50px 0 30px 0;
+}
+
+.header-columns h2 {
+
+    color: white;
+    font-weight: 300;
+    padding: 7px;
+    margin-top: 90px;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: white;
+    border-radius: 80px;
+    padding: 10px 40px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+}
+
+.cell-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 250px;
+    background-image: url(../img/phone.png);
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+}
+
+.cell-container img {
+    margin-top: 52px;
+    width: 219px;
+}
+
+#mobile-container {
+    width: 100%;
+    background-color: #FDC949;
+    padding: 100px 0 80px 0;
+}
+
+#mobile-container h1 {
+    font-weight: 200;
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+#mobile-container p {
+    font-size: 13px;
+}
+
+.mobile-icon {
+    width: 130px;
+    margin: 15px 0;
+}
+
+#features-container {
+    width: 100%;
+    padding: 50px 0 80px 0;
+    text-align: center;
+}
+
+#features-container h2 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+#features-container p {
+    font-size: 13px;
+    color: #6C7591;
+}
+
+#features-container .features-icon-container {
+    width: 210px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.features-icon {
+    font-size: 60px;
+    color: #A53569;
+    margin-bottom: 7px;
+}
+
+#get-started-container {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-cta.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    padding: 150px 10px;
+}
+
+#get-started-container h1 {
+    font-size: 5.5vmax;
+    color: white;
+    font-weight: 300;
+}
+
+#social-media-container {
+    width: 100%;
+    background-color: #FDC949;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+#social-media-container h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.fa-heart {
+    color: #DD4B39;
+}
+.social-icon
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    margin: 0 auto;
+    margin: 5px;
+    line-height: 64px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#tweeter{
+    background-color: #1DA1F2;
+}
+#facebook
+{
+    background-color: #3B5998;
+}
+#google-plus{
+    background-color: #DD4B39;
+}
+footer
+{
+    width: 100%;
+    padding: 30px;
+    background-color: #222222;
+    color: #596052;
+    text-align: center;
+}
+footer p
+{
+    margin: 0; 
+}
+footer p:last
+{
+    word-spacing: 8px;
+}

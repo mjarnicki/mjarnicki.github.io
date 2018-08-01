@@ -3,12 +3,12 @@
 
      //hide-show top menu 
      $("#menu-responsive").click(function () {
-         $("nav ul li").toggleClass("horizontal-menu")
+         $("#header-container #main-nav ul li ").toggleClass("horizontal-menu")
          $("nav").toggleClass("nav-horizontal-invisible");
      });
      //smooth scrool plugin
      var scroll = new SmoothScroll("a");
-     
+
      //animation of appearing elements
      $(window).scroll(function () {
          var position = window.pageYOffset;
@@ -31,18 +31,24 @@
          } else {
              $(".skill").removeClass("skill-slide");
          }
-         
+
          var portfolioPosition = $(".portfolio-icons-container").offset().top - $(".portfolio-icons-container").outerHeight();
-         if (position > portfolioPosition){
-            $("#icon1").addClass("portfolio-slide-1");
-            $("#icon2").addClass("portfolio-slide-2");
-            $("#icon3").addClass("portfolio-slide-3");
-         }
-         else{
-            $("#icon1").removeClass("portfolio-slide-1");
-            $("#icon2").removeClass("portfolio-slide-2");
-            $("#icon3").removeClass("portfolio-slide-3");
+         if (position > portfolioPosition) {
+             $("#icon1").addClass("portfolio-slide-1");
+             $("#icon2").addClass("portfolio-slide-2");
+             $("#icon3").addClass("portfolio-slide-3");
+         } else {
+             $("#icon1").removeClass("portfolio-slide-1");
+             $("#icon2").removeClass("portfolio-slide-2");
+             $("#icon3").removeClass("portfolio-slide-3");
          }
      });
 
+     // css animation show-hide
+     $("#icon4").click(function () {
+         $(".popup").addClass("popup-show-hide");
+     });
+     $("#close").click(function () {
+         $(".popup").removeClass("popup-show-hide");
+     });
  });
