@@ -95,13 +95,13 @@ $(function () {
         };
 
         //      zaznaczanie poprzednich dni
-
+        
         //        w obecnym miesiącu
         if (d.getMonth() == currentMonth) {
-            for (var ia = 0; ia < (d.getDate() - 1); ia++) {
+            for (var ia = 0; ia < (d.getDate() - 1 + monthInfo.firstDay ); ia++) {
                 $(".day-container").eq((ia)).addClass("inactive").removeClass("active");
-                //                zaznaczanie aktualnego dnia
-                $(".day-container").eq(d.getDate() - 1).addClass("current");
+        //       zaznaczanie aktualnego dnia
+                $(".day-container").eq(d.getDate() - 1 + monthInfo.firstDay ).addClass("current");
             }
         }
         //        w poprzednich miesiącach
