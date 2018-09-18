@@ -1,0 +1,65 @@
+@media (max-width: 1170px) {
+  .main-header .header-slider .single-slide .left-side .left-side__txt {
+    width: 50%; }
+  .info .column .column-container .info--tweet .tweet--icon .fa-twitter {
+    font-size: 23px; } }
+
+@media (max-width: 1024px) {
+  .main-header .header-slider .single-slide .left-side .left-side__txt {
+    width: 65%; }
+  .main-header .header-slider .single-slide .right-side .cell-image {
+    margin-left: 0; }
+    .main-header .header-slider .single-slide .right-side .cell-image img {
+      margin: 0 auto; }
+  .info .column {
+    position: relative; }
+    .info .column .column-container {
+      padding-left: 0;
+      margin: 0 auto; } }
+
+@media (max-width: 992px) {
+  .main-header .header-slider .single-slide {
+    position: static; }
+    .main-header .header-slider .single-slide .left-side {
+      position: static;
+      text-align: center; }
+      .main-header .header-slider .single-slide .left-side .left-side__txt {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto; }
+    .main-header .header-slider .single-slide .right-side {
+      position: static; }
+      .main-header .header-slider .single-slide .right-side .cell-image {
+        margin-left: 0; }
+        .main-header .header-slider .single-slide .right-side .cell-image img {
+          margin: 0 auto; }
+  .contact--minus-margin {
+    margin-top: -110px; } }
+
+@media (max-width: 768px) {
+  .main-header .header-slider .single-slide {
+    position: static; }
+    .main-header .header-slider .single-slide .left-side {
+      position: static;
+      text-align: center;
+      min-height: 500px; }
+      .main-header .header-slider .single-slide .left-side .left-side__button {
+        text-align: center;
+        position: static;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0); } }
+
+@media (max-width: 540px) {
+  .main-header .header-slider .single-slide .right-side .cell-image {
+    width: 100%; }
+    .main-header .header-slider .single-slide .right-side .cell-image img {
+      width: 100%;
+      height: auto; }
+  .main-header .header-slider .single-slide .right-side .cell-image:last-child img {
+    width: 33%;
+    height: auto; }
+  .contact--minus-margin {
+    margin-top: 0; } }
