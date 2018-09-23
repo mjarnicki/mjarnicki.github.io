@@ -62,4 +62,8 @@
     width: 33%;
     height: auto; }
   .contact--minus-margin {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .info .column .column-container .sub-column .follow--text {
+    width: 95%; }
+  .follow--text {
+    width: 95%; } }
