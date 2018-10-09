@@ -33,8 +33,14 @@ $(function () {
                 "transform": "rotate(0deg)"
         });
     }
-
-        // console.log(direction);
-
+    console.log(horizontal);
+        if (horizontal < 0 || vertical < 0 || horizontal > 680 || vertical > 380){
+            $(".speedway").css({
+                "background-image": "url(https://media.giphy.com/media/3o7aD4pR1HbHJFTBF6/giphy.gif)"
+        });
+        $("#plane").css({
+            "display": "none"
+    });
+        }
     })
 })

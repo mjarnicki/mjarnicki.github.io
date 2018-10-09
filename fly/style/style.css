@@ -8,7 +8,7 @@ body{
     border: 5px solid black;
     background-color:rgb(103, 126, 103);
 }
-h1{
+h1, p{
     text-align: center;
 }
 .speedway{
