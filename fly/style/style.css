@@ -1,28 +1,51 @@
-body{
-    background-color: #666;
+body {
+  background-color: #666;
 }
-.container{
-    width: 80%;
-    height: 550px;
-    margin: 0 auto;
-    border: 5px solid black;
-    background-color:rgb(103, 126, 103);
+.container {
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  border: 5px solid black;
+  background-color: rgb(103, 126, 103);
 }
-h1, p{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-.speedway{
-    width: 700px;
-    height: 400px;
-    background-image: url(../img/map.jpg);
-    margin: 0 auto;
-    position: relative;
+.speedway {
+  width: 700px;
+  height: 400px;
+  background-image: url(../img/map.jpg);
+  margin: 0 auto;
+  position: relative;
 }
-#plane{
-    position: relative;
-    top: 0;
-    left: 0;
-    /* height: 20px;
-    width: 20px; */
-    transform: rotate(0deg);
+#plane {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transform: rotate(0deg);
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+}
+#fire {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 2px;
+  margin: 9px 0;
+  width: 200px;
+  background-color: red;
+  display: inline-block;
+  visibility: hidden;
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(0px, 0px);
+
+  /* transform: rotate(90deg) translate(10px, 9px); */
+
+  /* transform: rotate(180deg) translate(20px, -2px); */
+
+  /* transform: rotate(270deg) translate(10px, -10px); */
 }
