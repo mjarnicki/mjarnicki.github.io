@@ -12,7 +12,7 @@ h1 {
 .speedway {
   width: 700px;
   height: 400px;
-  background-image: url(../img/map.jpg);
+  background-image: url(../img/plain.jpg);
   margin: 0 auto;
   position: relative;
 }
