@@ -45,30 +45,23 @@ $(function () {
         function direction(currentDirection) {
             if (currentDirection == "up") {
                 $("#plane").animate({
-                    top: (vertical - 30),
-                    step: function () {
-                        $(this).css('transform', 'rotate(180deg)');
-                    }
-                }
-                    , 200, "linear");
+                    top: (vertical - 30)
+                }, 100, "linear").removeClass().addClass("up");
             }
             else if (currentDirection == "down") {
                 $("#plane").animate({
-                    "top": (vertical + 30),
-                    "transform": "rotate(0deg)"
-                }, 200, "linear");
+                    "top": (vertical + 30)
+                }, 100, "linear").removeClass().addClass("down");
             }
             else if (currentDirection == "left") {
                 $("#plane").animate({
-                    "left": (horizontal - 30),
-                    "transform": "rotate(90deg)"
-                }, 200, "linear");
+                    "left": (horizontal - 30)
+                }, 100, "linear").removeClass().addClass("left");
             }
             else if (currentDirection == "right") {
                 $("#plane").animate({
-                    "left": (horizontal + 30),
-                    "transform": "rotate(270deg)"
-                }, 200, "linear");
+                    "left": (horizontal + 30)
+                }, 100, "linear").removeClass().addClass("right");
             }
             way = currentDirection;
         }

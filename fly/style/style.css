@@ -22,7 +22,7 @@ h1 {
   left: 0;
   height: 30px;
   width: 30px;
-  transform: rotate(270deg);
+  /* transform: rotate(270deg); */
   display: flex;
   float: left;
   justify-content: center;
@@ -59,4 +59,20 @@ img{
   background-size: contain;
   position: absolute;
   display: inline-block;
+}
+.up{
+  transform: rotate(180deg);
+  transition: all 0.2s linear;
+}
+.down{
+  transform: rotate(0deg);
+  transition: all 0.2s linear;
+}
+.left{
+  transform: rotate(90deg);
+  transition: all 0.2s linear;
+}
+.right{
+  transform: rotate(270deg);
+  transition: all 0.2s linear;
 }
