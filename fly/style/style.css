@@ -10,9 +10,9 @@ h1 {
   text-align: center;
 }
 .speedway {
-  width: 700px;
-  height: 400px;
-  background-image: url(../img/plain.jpg);
+  width: 720px;
+  height: 420px;
+  background-image: url(../img/plain.png);
   margin: 0 auto;
   position: relative;
 }
@@ -27,6 +27,7 @@ h1 {
   float: left;
   justify-content: center;
   align-items: center;
+  z-index: 3;
   /* display: none; */
 }
 img{
@@ -41,10 +42,21 @@ img{
   width: 30px;
   visibility: hidden;
   border-radius: 15px;
+  z-index: 3;
+}
 
-  /* transform: rotate(90deg) translate(10px, 9px); */
-
-  /* transform: rotate(180deg) translate(20px, -2px); */
-
-  /* transform: rotate(270deg) translate(10px, -10px); */
+.hit{
+  height: 30px;
+  width: 30px;
+  z-index: 3;
+  position: absolute;
+  display: inline-block;
+}
+.target{
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/tank.png);
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
 }
