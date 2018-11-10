@@ -14,23 +14,58 @@
 <body>
     <div class="container">
         <header>
-            <h1>Polataj samolotem</h1>
-            <p>Amunicja: <span id="ammo"></span></p>
+            <div class="parameter">Amunicja: <span id="ammo"></span></div>
+            <div class="parameter">Cele do zniszczenia: <span id="targets-to-destroy">5</span></div>
+            <div class="parameter">Czas <span id="timer">00:00</span></div>
         </header>
-        <section>
-            <div class="speedway">
-                <div id="plane">
-                    <img src="http://i.imgur.com/RDa32Jn.gif" alt="">
-                    
+        <div class="speedway">
+            <div class="start-screen">
+                <h1>SYMULATOR ŚMIGŁOWCA</h1>
+                <p>Twoim zadaniem jest zniszczenie 5 czołgów losowo rozmieszczonych na polu bitwy. Postaraj się zrobić to w jak najkrótszym czasie. Uważaj też na aminicję. Kolejny strzał jest możliwy dopiero, kiedy rakiety dosięgną celu. 
+                </p>
+                <p><strong>Po wykonaniu zadania wróc na lądowisko.</strong></p>
+                <p>PS: Sugeruję uruchomienie gry na przeglądarce Chrome. Oraz niezbyt szybkie wciskanie klawiszy. &#9786;<br>
+         
+                </p>
+
+                <h3 class="steering-head">STEROWANIE</h3>
+                <h3 class="fire-head">STRZAŁ</h3>
+                <div class="button-container">
+                    <div class="button">&uarr;</div>
+                    <div class="button">&larr;</div>
+                    <div class="button">&darr;</div>
+                    <div class="button">&rarr;</div>
                 </div>
-                <img id="fire" src="img/rockets.png" alt="" >
-              
+                <div class="equality-container">
+                    =
+                </div>
+                <div class="button-container">
+                    <div class="button">W</div>
+                    <div class="button">A</div>
+                    <div class="button">S</div>
+                    <div class="button">D</div>
+                </div>
+                <div class="fire-container"> 
+                    <div class="button">F</div>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="start-button">
+                    START!
+                </div>
             </div>
-        </section>
+            <div class="end-screen">
+                <h1>MISJA WYKONANA!</h1>
+                <h3 class="timer-score">Twój czas to: <span id="score">00:00</span></h3>
+                <a class="button-once-again" href="">JESZCZE RAZ?</a>
+            </div>
+            <div id="plane">
+                <img src="http://i.imgur.com/RDa32Jn.gif" alt="">
+
+            </div>
+            <img id="fire" src="img/rockets.png" alt="">
+
+        </div>
     </div>
-    <footer>
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </body>
