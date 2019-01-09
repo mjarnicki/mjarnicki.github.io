@@ -1,0 +1,417 @@
+body
+{
+	background-color:#91b3d4;
+}
+
+#container
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+#counter
+{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+#maze
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 400px;
+	width: 860px;
+}
+#finish
+{
+	position: absolute;
+	top: 0px;
+	left: 820px;
+	background-color: green;
+	height: 60px;
+	width: 40px;
+}
+
+#start
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: green;
+	height: 60px;
+	width: 40px;
+}
+#start:hover
+{
+	background-color: #00ae00;
+}
+
+#setup
+{
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	text-align: center;
+	background-color: #4a6de8;
+	height: 400px;
+	width: 780px;
+	z-index: 3;
+	color: yellow;
+}
+#setup h1
+{
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+}
+
+#setup p
+{
+	font-size: 25px;
+}
+#lost
+{
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	text-align: center;
+	background-color: red;
+	height: 400px;
+	width: 780px;
+	z-index: 9;
+	display: none;
+}
+#lost h1
+{
+	color: yellow;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+}
+#lost p
+{
+	color: yellow;
+	font-size: 25px;
+}
+
+#win
+{
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	text-align: center;
+	background-color: green;
+	height: 400px;
+	width: 780px;
+	z-index: 9;
+	display: none;
+}
+#win h1
+{
+	color: yellow;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+}
+#win p
+{
+	color: yellow;
+	font-size: 25px;
+}
+#restart
+{
+	font-weight: bold;
+}
+#restart2
+{
+	font-weight: bold;
+}
+
+#restart:hover
+{
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+}
+#restart2:hover
+{
+	color: green;
+	cursor: pointer;
+	font-weight: bold;
+}
+#time
+{	
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+/*poniżej labirynt*/
+#box1a
+{
+	position: absolute;
+	top: 0;
+	left: 40px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box1b
+{
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box1Top
+{
+	position: absolute;
+	top: 0;
+	left: 120px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box1Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box2a
+{
+	position: absolute;
+	top: 0;
+	left: 140px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box2b
+{
+	position: absolute;
+	bottom: 0;
+	left: 140px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box2Top
+{
+	position: absolute;
+	top: 0;
+	left: 220px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box2Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 220px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box3a
+{
+	position: absolute;
+	top: 0;
+	left: 240px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box3b
+{
+	position: absolute;
+	bottom: 0;
+	left: 240px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box3Top
+{
+	position: absolute;
+	top: 0;
+	left: 320px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box3Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 320px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box4a
+{
+	position: absolute;
+	top: 0;
+	left: 340px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box4b
+{
+	position: absolute;
+	bottom: 0;
+	left: 340px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box4Top
+{
+	position: absolute;
+	top: 0;
+	left: 420px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box4Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 420px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box5a
+{
+	position: absolute;
+	top: 0;
+	left: 440px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box5b
+{
+	position: absolute;
+	bottom: 0;
+	left: 440px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box5Top
+{
+	position: absolute;
+	top: 0;
+	left: 520px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box5Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 520px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box6a
+{
+	position: absolute;
+	top: 0;
+	left: 540px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box6b
+{
+	position: absolute;
+	bottom: 0;
+	left: 540px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box6Top
+{
+	position: absolute;
+	top: 0;
+	left: 620px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box6Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 620px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box7a
+{
+	position: absolute;
+	top: 0;
+	left: 640px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box7b
+{
+	position: absolute;
+	bottom: 0;
+	left: 640px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}
+#box7Top
+{
+	position: absolute;
+	top: 0;
+	left: 720px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box7Bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 720px;
+	background-color: yellow;
+	height: 30px;
+	width: 20px;
+}
+#box8a
+{
+	position: absolute;
+	top: 0;
+	left: 740px;
+	background-color: yellow;
+	height: 240px;
+	width: 80px;
+}
+#box8b
+{
+	position: absolute;
+	bottom: 0;
+	left: 740px;
+	background-color: yellow;
+	height: 140px;
+	width: 80px;
+}

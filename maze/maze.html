@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="Stylesheet" type="text/css" href="maze.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet"> 
+
+<title>Labirynt</title>
+
+</head>
+
+<body >
+<div id="container">
+
+	<div id="maze">
+		
+		<div id="setup">
+		<h1>Labirynt</h1>
+		<p>Aby rozpocząć wybierz ilość żyć i naciśnij zielony prostokąt:</p>
+		<input name="lifes" type="radio" id="1" value="1"/>1
+		<input name="lifes" type="radio" id="2" value="2"/>2
+		<input name="lifes" type="radio" id="3" value="3"/>3
+		<input name="lifes" type="radio" id="4" value="4"/>4
+		<input name="lifes" type="radio" id="5" value="500"/>500
+		</div>
+		
+		<div id="start"></div>
+		<div id="box1a" 	onmouseenter="fail()"></div>
+		<div id="box1b" 	onmouseenter="fail()"></div>
+		<div id="box1Top" 	onmouseenter="fail()"></div>
+		<div id="box1Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box2a" 	onmouseenter="fail()"></div>
+		<div id="box2b" 	onmouseenter="fail()"></div>
+		<div id="box2Top" 	onmouseenter="fail()"></div>
+		<div id="box2Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box3a" 	onmouseenter="fail()"></div>
+		<div id="box3b"		onmouseenter="fail()" ></div>
+		<div id="box3Top" 	onmouseenter="fail()"></div>
+		<div id="box3Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box4a" 	onmouseenter="fail()"></div>
+		<div id="box4b" 	onmouseenter="fail()"></div>
+		<div id="box4Top" 	onmouseenter="fail()"></div>
+		<div id="box4Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box5a" 	onmouseenter="fail()"></div>
+		<div id="box5b" 	onmouseenter="fail()"></div>
+		<div id="box5Top" 	onmouseenter="fail()"></div>
+		<div id="box5Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box6a" 	onmouseenter="fail()"></div>
+		<div id="box6b" 	onmouseenter="fail()"></div>
+		<div id="box6Top" 	onmouseenter="fail()"></div>
+		<div id="box6Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box7a" 	onmouseenter="fail()"></div>
+		<div id="box7b" 	onmouseenter="fail()"></div>
+		<div id="box7Top" 	onmouseenter="fail()"></div>
+		<div id="box7Bottom" onmouseenter="fail()"></div>
+		
+		<div id="box8a" 	onmouseenter="fail()"></div>
+		<div id="box8b" 	onmouseenter="fail()"></div>
+		<img id="finish" src="finish.jpg"/>
+			
+		<div id="lost">
+		<h1>!PRZEGRAŁEŚ!</h1>
+		<p>Aby zagrać jeszcze raz, naciśnij <span id="restart">tutaj</span>.</p>
+		</div>
+		
+		<div id="win">
+		<h1>!Wygrałeś!</h1>
+		<p>Aby zagrać jeszcze raz, naciśnij <span id="restart2">tutaj</span>.</p>
+		</div>
+	
+	</div>
+	<div id="counter">liczba żyć: </div> <div id="time">00:00</div>
+</div>
+
+<script src="maze.js" type="text/javascript"></script>
+
+</body>
+</html>
