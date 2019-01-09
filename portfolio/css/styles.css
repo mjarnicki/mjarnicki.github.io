@@ -279,7 +279,23 @@ nav ul li a:hover {
 }
 
 #portfolio .portfolio-icons-container .row #icon8 {
-    background-image: url(../img/portfolio1.jpg);
+    background-image: url(../img/booking.JPG);
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon9 {
+    background-image: url(../img/bem-project.JPG);
+    /*
+    right: -500px;
+    transition: all 0.3s linear;
+*/
+}
+
+#portfolio .portfolio-icons-container .row #icon10 {
+    background-image: url(../img/fly.JPG);
     /*
     right: -500px;
     transition: all 0.3s linear;
