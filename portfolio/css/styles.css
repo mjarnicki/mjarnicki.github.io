@@ -362,14 +362,14 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transition: all 0.3s linear;
     z-index: 2;
 }
 
 .popup-show-hide {
-    visibility: visible;
+    display: block;
     opacity: 1;
     transition: all 0.2s linear;
 }
