@@ -126,6 +126,8 @@ span {
     #about-me-article {
         line-height: 1.5;
         margin: 10px 00px;
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
         p {
             margin: 0 5px;
         }
