@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+
+    <script src="dist/js/scripts.js"></script>
+
+    <style>
+        @font-face {
+            font-family: OpenSans;
+            src: url('dist/fonts/OpenSans-Regular.ttf');
+            font-weight: 400;
+          }
+        @font-face {
+            font-family: OpenSans;
+            src: url('dist/fonts/OpenSans-SemiBold.ttf');
+            font-weight: 600;
+          }
+        @font-face {
+            font-family: OpenSans;
+            src: url('dist/fonts/OpenSans-Bold.ttf');
+            font-weight: 700;
+          }
+    </style>
+
+</head>
+<body>
+    <header class="header__fixed-container">
+        <div class="header__container">
+            <h1 class="header__title">
+                <svg class="header__tag-icon">
+                    <use xlink:href="dist/svg/svg.svg#tag" ></use>
+                </svg>
+                <span class="d-none d-md-block ml-2">
+                    Front-end
+                </span>
+            </h1>
+            <nav class="header__nav-container">
+                <ul class="header__desktop-menu d-none d-md-flex">
+                    <li>
+                        <a href="#news" class="header__menu-item" title="Przejdź do wiadomości" focus-trap-disabled>
+                            Wiadomości
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#technologies" class="header__menu-item" title="Przejdź do technologii" focus-trap-disabled>
+                            Technologie
+                        </a>
+                    </li>
+                </ul>
+                <button class="hamburger__container d-md-none">
+                    <div class="hamburger__line hamburger__line--1"></div>
+                    <div class="hamburger__line hamburger__line--2"></div>
+                    <div class="hamburger__line hamburger__line--3"></div>
+                </button>
+
+            </nav>
+            <ul class="header__mobile-menu d-md-none">
+                <li class="mb-5">
+                    <a href="#news" class="header__menu-item ml-0" tabindex="-1" title="Przejdź do wiadomości">
+                        Wiadomości
+                    </a> 
+                </li>
+                <li class="mb-5">
+                    <a href="#technologies" class="header__menu-item ml-0" tabindex="-1" title="Przejdź do technologii">
+                        Technologie
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider-form__container">
+            <div class="slider-form row">
+                <div class="col-12 col-md-6 slider__container">
+                    <button class="slider__toggle-autoplay" aria-label="zatrzymaj slider">
+                        <div class="slider__toggle-autoplay--pause"></div>
+                        <div class="slider__toggle-autoplay--play d-none"></div>
+                    </button>
+                    <img class="slider__img" src="dist/images/slide-1.png" alt="robot">
+                    <img class="slider__img" src="dist/images/slide-2.jpg" alt="górska dolina">
+                    <img class="slider__img" src="dist/images/slide-3.jpg" alt="most we mgle">
+                    <ul class="slider__dots-container">
+                        <!-- dots will be generated here by js -->
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 form__container">
+                    <!-- CHOOSE -->
+                    <div id="choose" class="flex-center mt-2 ">
+                        <h2 class="form__header mb-5">Dzień dobry</h2>
+
+                        <button class="form__button-primary" target="login">
+                            Zaloguj się
+                        </button>
+
+                        <p class="form__text-separator"> lub</p>
+
+                        <button class="form__button-secondary" target="register">
+                            Zarejestruj się
+                        </button>
+                    </div>
+                    <!-- LOGIN -->
+                    <form id="login" class="flex-center d-none">
+                        <h2 class="form__header mb-5">Zaloguj się</h2>
+
+                        <div class="form__text-input-container mb-30">
+                            <input id="login-login" type="text" class="form__text-input" placeholder=" "  required>
+                            <label for="login-login" class="form__text-placeholder">Login</label>
+                            <label for="login-login" class="form__text-error">Nieprawidłowy login</label>
+                        </div>
+
+                        <div class="form__text-input-container mb-3">
+                            <input id="password-login" type="password" class="form__text-input" placeholder=" " required>
+                            <button class="form__show-password-button" aria-label="pokaż hasło">
+                                <svg class="form__show-password-icon">
+                                    <use xlink:href="dist/svg/svg.svg#eye" ></use>
+                                </svg>
+                            </button>
+                            <label for="password-login" class="form__text-placeholder">Hasło</label>
+                            <label for="password-login" class="form__text-error">Błędne hasło</label>
+                        </div>
+
+                        <div class="form__swich-container">
+                            <input class="form__swich-checkbox" type="checkbox" id="remember-session">
+                            <label for="remember-session" class="form__swich-icon"></label>
+                            <label for="remember-session" class="form__swich-label">Zapamiętaj moją sesje</label>
+                        </div>
+
+                        <button type="submit" value="Dalej" target="login-confirmed" id="login-submit" class="form__button-primary mb-3">
+                            Dalej
+                        </button>
+
+                        <button class="form__link" target="register">Nie mam konta</button>
+                    </form>
+                    <!-- LOGIN CONFIRMED -->
+                    <div id="login-confirmed" class="flex-center d-none">
+                        <h2 class="form__header">Gratuluję, zalogowałeś się!</h2>
+                        <button class="form__link" target="choose">Powrót</a>
+                    </div>
+                    <!-- REGISTER -->
+                    <form id="register" class="flex-center d-none" >
+                        <h2 class="form__header mb-30">Zarejestruj się</h2>
+
+                        <div class="form__text-input-container mb-30">
+                            <input id="login-register" type="text" class="form__text-input" placeholder=" " required>
+                            <label for="login-register" class="form__text-placeholder">Login</label>
+                            <div class="form__text-error">Nieprawidłowy login</div>
+                        </div>
+
+                        <div class="form__text-input-container mb-30">
+                            <input id="password-register" type="password" class="form__text-input" placeholder=" " required>
+                            <button class="form__show-password-button" aria-label="pokaż hasło">
+                                <svg class="form__show-password-icon">
+                                    <use xlink:href="dist/svg/svg.svg#eye" ></use>
+                                </svg>
+                            </button>
+                            <label for="password-register" class="form__text-placeholder">Hasło</label>
+                            <label for="password-register" class="form__text-error">Błędne hasło</label>
+                        </div>
+                        
+                        <div class="form__line-separator mb-30"></div>
+
+                        <div class="form__text-input-container mb-30">
+                            <input id="name" type="text" class="form__text-input" placeholder=" " required>
+                            <label for="name" class="form__text-placeholder">Imię i nazwisko</label>
+                            <label for="name" class="form__text-error">Błędnie wypełnione pole</label>
+                        </div>
+
+                        <div class="form__text-input-container mb-30">
+                            <input id="e-main" type="email" class="form__text-input" placeholder=" " required>
+                            <label for="e-main" class="form__text-placeholder">Adres e-mail</label>
+                            <label for="e-main" class="form__text-error">Nieprawidłowy adres e-mail</label>
+                        </div>
+
+                        <div class="form__checkbox-container">
+                            <input id="agree" type="checkbox" class="form__checkbox-input" required> 
+                            <label for="agree" class="form__checkbox-checkbox"></label>
+                            <label for="agree" class="form__checkbox-label">Wyrażam zgodę na lorem ipsum lorem ipsum</label>
+                            <label for="agree" class="form__text-error">Pole wymagane</label>
+                        </div>
+
+                        <button target="register-confirmed" type="submit" value="Załóż konto" id="register-submit" class="form__button-primary mb-3">
+                            Załóż konto
+                        </button>
+
+                        <button class="form__link" target="login">Chcę się zalogować</button>
+                    </form>
+                    <!-- REGISTER CONFIRMED -->
+                    <div id="register-confirmed" class="flex-center d-none">
+                        <h2 class="form__header">Gratuluję, konto zostało utworzone!</h2>
+                        <button class="form__link" target="choose">Powrót</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="publications__container container" id="news">
+            <h2 class="publications__header">Dzień dobry</h2>
+            <div id="publications-to-paste" class="publications__inner-container">
+                <!-- publications will be generated here by js -->
+                <div class="publications__loader">
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <button class="publications__load-more">
+                Załaduj więcej 
+                <svg class="publications__load-more-icon">
+                    <use xlink:href="dist/svg/svg.svg#load" ></use>
+                </svg>
+            </button>
+        </section>
+        <section class="technologies__container" id="technologies">
+            <h2 class="technologies__header">Nasze technologie</h2>
+            <div class="technologies__tiles-container">
+                <a href="" class="technologies__tile">
+                    <svg class="technologies__tile-icon technologies__tile-icon--webpack">
+                        <use xlink:href="dist/svg/svg.svg#webpack" ></use>
+                    </svg>
+                    <span class="technologies__tile-separator"></span>
+                    <p class="technologies__tile-label">
+                        Webpack
+                    </p>
+                </a>
+                <a href="" class="technologies__tile">
+                    <svg class="technologies__tile-icon technologies__tile-icon--js">
+                        <use xlink:href="dist/svg/svg.svg#js" ></use>
+                    </svg>
+                    <span class="technologies__tile-separator"></span>
+                    <p class="technologies__tile-label">
+                        JavaScript
+                    </p>
+                </a>
+                <a href="" class="technologies__tile">
+                    <svg class="technologies__tile-icon technologies__tile-icon--npm">
+                        <use xlink:href="dist/svg/svg.svg#npm" ></use>
+                    </svg>
+                    <span class="technologies__tile-separator"></span>
+                    <p class="technologies__tile-label">
+                        Node package Manager
+                    </p>
+                </a>
+                <a href="" class="technologies__tile">
+                    <svg class="technologies__tile-icon technologies__tile-icon--html">
+                        <use xlink:href="dist/svg/svg.svg#html5" ></use>
+                    </svg>
+                    <span class="technologies__tile-separator"></span>
+                    <p class="technologies__tile-label">
+                        HTML
+                    </p>
+                </a>
+            </div>
+            </section>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__text">K2</div>
+    </footer>
+
+</body>
+</html> 
