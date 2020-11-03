@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Front end</title>
     <link rel="stylesheet" href="dist/css/styles.css">
-    <link rel="icon" type="Shortcut icon" href="dist/images/favicon.png">
+    <link rel="icon" type="Shortcut/icon" href="dist/images/favicon.png">
     <meta name="description" content="Example page with simple form">
 
     <script src="dist/js/scripts.js"></script>
@@ -44,17 +44,17 @@
             <nav class="header__nav-container">
                 <ul class="header__desktop-menu d-none d-md-flex">
                     <li>
-                        <a href="#news" class="header__menu-item" title="Przejdź do wiadomości" focus-trap-disabled>
+                        <a href="#news" class="header__menu-item" title="Przejdź do wiadomości">
                             Wiadomości
                         </a> 
                     </li>
                     <li>
-                        <a href="#technologies" class="header__menu-item" title="Przejdź do technologii" focus-trap-disabled>
+                        <a href="#technologies" class="header__menu-item" title="Przejdź do technologii">
                             Technologie
                         </a>
                     </li>
                 </ul>
-                <button class="hamburger__container d-md-none">
+                <button class="hamburger__container d-md-none focus-trap">
                     <span class="hamburger__line hamburger__line--1"></span>
                     <span class="hamburger__line hamburger__line--2"></span>
                     <span class="hamburger__line hamburger__line--3"></span>
@@ -63,12 +63,12 @@
             </nav>
             <ul class="header__mobile-menu d-md-none">
                 <li class="mb-5">
-                    <a href="#news" class="header__menu-item ml-0" tabindex="-1" title="Przejdź do wiadomości">
+                    <a href="#news" class="header__menu-item ml-0 focus-trap" tabindex="-1" title="Przejdź do wiadomości">
                         Wiadomości
                     </a> 
                 </li>
                 <li class="mb-5">
-                    <a href="#technologies" class="header__menu-item ml-0" tabindex="-1" title="Przejdź do technologii">
+                    <a href="#technologies" class="header__menu-item ml-0 focus-trap" tabindex="-1" title="Przejdź do technologii">
                         Technologie
                     </a>
                 </li>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-12 col-md-6 form__container">
                     <!-- CHOOSE -->
-                    <div id="choose" class="flex-center mt-2 ">
+                    <div target="choose" class="flex-center mt-2 ">
                         <h2 class="form__header mb-5">Dzień dobry</h2>
 
                         <button class="form__button-primary form-navigation" id="login">
@@ -106,13 +106,13 @@
                         </button>
                     </div>
                     <!-- LOGIN -->
-                    <form id="login" class="flex-center d-none" target="login">
+                    <form target="login" class="flex-center d-none">
                         <h2 class="form__header mb-5">Zaloguj się</h2>
 
                         <div class="form__text-input-container mb-30">
                             <input id="login-login" type="text" class="form__text-input" placeholder=" "  required>
                             <label for="login-login" class="form__text-placeholder">Login</label>
-                            <label for="login-login" class="form__text-error">Nieprawidłowy login</label>
+                            <p class="form__text-error">Nieprawidłowy login</p>
                         </div>
 
                         <div class="form__text-input-container mb-3">
@@ -123,13 +123,13 @@
                                 </svg>
                             </button>
                             <label for="password-login" class="form__text-placeholder">Hasło</label>
-                            <label for="password-login" class="form__text-error">Błędne hasło</label>
+                            <p class="form__text-error">Błędne hasło</p>
                         </div>
 
                         <div class="form__swich-container">
                             <input class="form__swich-checkbox" type="checkbox" id="remember-session">
                             <label for="remember-session" class="form__swich-icon"></label>
-                            <label for="remember-session" class="form__swich-label">Zapamiętaj moją sesje</label>
+                            <p class="form__swich-label">Zapamiętaj moją sesje</p>
                         </div>
 
                         <button type="submit" value="Dalej" id="login-confirmed" class="form__button-primary mb-3 login-submit form-navigation">
@@ -139,18 +139,18 @@
                         <button class="form__link form-navigation" id="register">Nie mam konta</button>
                     </form>
                     <!-- LOGIN CONFIRMED -->
-                    <div id="login-confirmed" class="flex-center d-none">
+                    <div target="login-confirmed" class="flex-center d-none">
                         <h2 class="form__header">Gratuluję, zalogowałeś się!</h2>
                         <button class="form__link form-navigation" id="choose">Powrót</button>
                     </div>
                     <!-- REGISTER -->
-                    <form id="register" class="flex-center d-none" >
+                    <form target="register" class="flex-center d-none" >
                         <h2 class="form__header mb-30">Zarejestruj się</h2>
 
                         <div class="form__text-input-container mb-30">
                             <input id="login-register" type="text" class="form__text-input" placeholder=" " required>
                             <label for="login-register" class="form__text-placeholder">Login</label>
-                            <div class="form__text-error">Nieprawidłowy login</div>
+                            <p class="form__text-error">Nieprawidłowy login</p>
                         </div>
 
                         <div class="form__text-input-container mb-30">
@@ -161,7 +161,7 @@
                                 </svg>
                             </button>
                             <label for="password-register" class="form__text-placeholder">Hasło</label>
-                            <label for="password-register" class="form__text-error">Błędne hasło</label>
+                            <p class="form__text-error">Błędne hasło</p>
                         </div>
                         
                         <div class="form__line-separator mb-30"></div>
@@ -169,20 +169,20 @@
                         <div class="form__text-input-container mb-30">
                             <input id="name" type="text" class="form__text-input" placeholder=" " required>
                             <label for="name" class="form__text-placeholder">Imię i nazwisko</label>
-                            <label for="name" class="form__text-error">Błędnie wypełnione pole</label>
+                            <p class="form__text-error">Błędnie wypełnione pole</p>
                         </div>
 
                         <div class="form__text-input-container mb-30">
                             <input id="e-main" type="email" class="form__text-input" placeholder=" " required>
                             <label for="e-main" class="form__text-placeholder">Adres e-mail</label>
-                            <label for="e-main" class="form__text-error">Nieprawidłowy adres e-mail</label>
+                            <p class="form__text-error">Nieprawidłowy adres e-mail</p>
                         </div>
 
                         <div class="form__checkbox-container">
                             <input id="agree" type="checkbox" class="form__checkbox-input" required> 
                             <label for="agree" class="form__checkbox-checkbox"></label>
                             <label for="agree" class="form__checkbox-label">Wyrażam zgodę na lorem ipsum lorem ipsum</label>
-                            <label for="agree" class="form__text-error">Pole wymagane</label>
+                            <p class="form__text-error">Pole wymagane</p>
                         </div>
 
                         <button type="submit" value="Załóż konto" id="register-confirmed" class="form__button-primary mb-3 register-submit form-navigation">
@@ -192,7 +192,7 @@
                         <button class="form__link form-navigation" id="login">Chcę się zalogować</button>
                     </form>
                     <!-- REGISTER CONFIRMED -->
-                    <div id="register-confirmed" class="flex-center d-none">
+                    <div target="register-confirmed" class="flex-center d-none">
                         <h2 class="form__header">Gratuluję, konto zostało utworzone!</h2>
                         <button class="form__link form-navigation" id="choose">Powrót</button>
                     </div>

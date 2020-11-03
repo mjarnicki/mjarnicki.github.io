@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
               formElement.classList.add('d-none');
               formElement.classList.remove('form__validate');
 
-              if (formElement.getAttribute('id') === button.getAttribute('id')) {
+              if (formElement.getAttribute('target') === button.getAttribute('id')) {
                 formElement.classList.remove('d-none');
                 formElement.querySelectorAll('input, button')[0].focus();
               }
@@ -220,7 +220,7 @@ function scrollToPageSection(event, item, offset) {
 }
 
 function trapFocus(element) {
-  var focusableEls = element.querySelectorAll('a[href]:not([focus-trap-disabled]), button:not([focus-trap-disabled])');
+  var focusableEls = element.querySelectorAll('.focus-trap');
   var firstFocusableEl = focusableEls[0];
   var lastFocusableEl = focusableEls[focusableEls.length - 1];
   var KEYCODE_TAB = 9;
