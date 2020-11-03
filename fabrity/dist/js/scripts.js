@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('.login-submit').addEventListener('click', validateForm);
   document.querySelector('.register-submit').addEventListener('click', validateForm); // form navigation
 
-  var _iterator2 = _createForOfIteratorHelper(formContainer.querySelectorAll('.form-navigation')),
+  var _iterator2 = _createForOfIteratorHelper(formContainer.querySelectorAll('[data-target]')),
       _step2;
 
   try {
