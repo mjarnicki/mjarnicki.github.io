@@ -95,13 +95,13 @@
                     <div id="choose" class="flex-center mt-2 ">
                         <h2 class="form__header mb-5">Dzień dobry</h2>
 
-                        <button class="form__button-primary" target="login">
+                        <button class="form__button-primary form-navigation" id="login">
                             Zaloguj się
                         </button>
 
                         <p class="form__text-separator"> lub</p>
 
-                        <button class="form__button-secondary" target="register">
+                        <button class="form__button-secondary form-navigation" id="register">
                             Zarejestruj się
                         </button>
                     </div>
@@ -132,16 +132,16 @@
                             <label for="remember-session" class="form__swich-label">Zapamiętaj moją sesje</label>
                         </div>
 
-                        <button type="submit" value="Dalej" target="login-confirmed" id="login-submit" class="form__button-primary mb-3">
+                        <button type="submit" value="Dalej" id="login-confirmed" class="form__button-primary mb-3 login-submit form-navigation">
                             Dalej
                         </button>
 
-                        <button class="form__link" target="register">Nie mam konta</button>
+                        <button class="form__link form-navigation" id="register">Nie mam konta</button>
                     </form>
                     <!-- LOGIN CONFIRMED -->
                     <div id="login-confirmed" class="flex-center d-none">
                         <h2 class="form__header">Gratuluję, zalogowałeś się!</h2>
-                        <button class="form__link" target="choose">Powrót</button>
+                        <button class="form__link form-navigation" id="choose">Powrót</button>
                     </div>
                     <!-- REGISTER -->
                     <form id="register" class="flex-center d-none" >
@@ -185,16 +185,16 @@
                             <label for="agree" class="form__text-error">Pole wymagane</label>
                         </div>
 
-                        <button target="register-confirmed" type="submit" value="Załóż konto" id="register-submit" class="form__button-primary mb-3">
+                        <button type="submit" value="Załóż konto" id="register-confirmed" class="form__button-primary mb-3 register-submit form-navigation">
                             Załóż konto
                         </button>
 
-                        <button class="form__link" target="login">Chcę się zalogować</button>
+                        <button class="form__link form-navigation" id="login">Chcę się zalogować</button>
                     </form>
                     <!-- REGISTER CONFIRMED -->
                     <div id="register-confirmed" class="flex-center d-none">
                         <h2 class="form__header">Gratuluję, konto zostało utworzone!</h2>
-                        <button class="form__link" target="choose">Powrót</button>
+                        <button class="form__link form-navigation" id="choose">Powrót</button>
                     </div>
                 </div>
             </div>

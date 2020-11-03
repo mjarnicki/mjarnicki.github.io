@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     _iterator.f();
   }
 
-  document.querySelector('#login-submit').addEventListener('click', validateForm);
-  document.querySelector('#register-submit').addEventListener('click', validateForm); // form navigation
+  document.querySelector('.login-submit').addEventListener('click', validateForm);
+  document.querySelector('.register-submit').addEventListener('click', validateForm); // form navigation
 
-  var _iterator2 = _createForOfIteratorHelper(formContainer.querySelectorAll('[target]')),
+  var _iterator2 = _createForOfIteratorHelper(formContainer.querySelectorAll('.form-navigation')),
       _step2;
 
   try {
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
               formElement.classList.add('d-none');
               formElement.classList.remove('form__validate');
 
-              if (formElement.getAttribute('id') === button.getAttribute('target')) {
+              if (formElement.getAttribute('id') === button.getAttribute('id')) {
                 formElement.classList.remove('d-none');
                 formElement.querySelectorAll('input, button')[0].focus();
               }
