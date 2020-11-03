@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
               formElement.classList.add('d-none');
               formElement.classList.remove('form__validate');
 
-              if (formElement.getAttribute('target') === button.getAttribute('id')) {
+              if (formElement.getAttribute('id') === button.getAttribute('data-target')) {
                 formElement.classList.remove('d-none');
                 formElement.querySelectorAll('input, button')[0].focus();
               }
