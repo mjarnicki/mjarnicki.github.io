@@ -144,8 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }); // header shrink
 
   window.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
-
     if (window.pageYOffset > 80) {
       parent.classList.add('header__container--shrink');
     } else if (window.pageYOffset <= 80) {
@@ -165,12 +163,12 @@ document.addEventListener("DOMContentLoaded", function () {
       var item = _step.value;
       item.addEventListener('click', function (event) {
         toggleMobileMenu();
-        scrollToPageSection(event, item, '-51px');
+        scrollToPageSection(event, item, 60);
       });
       item.addEventListener('keypress', function (event) {
         if (event.keyCode == 32 || event.keyCode == 13) {
           toggleMobileMenu();
-          scrollToPageSection(event, item, '-51px');
+          scrollToPageSection(event, item, 60);
         }
       });
     };
@@ -192,10 +190,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var _loop2 = function _loop2() {
       var item = _step2.value;
       item.addEventListener('click', function (event) {
-        scrollToPageSection(event, item, '-148px');
+        scrollToPageSection(event, item, 120);
+        console.log('adsfasdf');
       });
       item.addEventListener('keypress', function (event) {
-        if (event.keyCode == 32 || event.keyCode == 13) scrollToPageSection(event, item, '-148px');
+        if (event.keyCode == 32 || event.keyCode == 13) scrollToPageSection(event, item, 120);
       });
     };
 
@@ -237,16 +236,15 @@ function scrollToPageSection(event, item, offset) {
   event.preventDefault();
   var targetId = item.getAttribute('href');
   var target = document.querySelector(targetId);
-  var pos = target.style.position;
-  var top = target.style.top;
-  target.style.position = 'relative';
-  target.style.top = offset;
-  target.scrollIntoView({
-    behavior: 'smooth'
+  var offsetTop = target.offsetTop - offset;
+  console.log(offsetTop);
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
   });
-  target.style.top = top;
-  target.style.position = pos;
-  target.querySelector('a, button').focus();
+  setTimeout(function () {
+    return target.querySelector('a, button').focus();
+  }, 600);
 }
 
 function trapFocus(element) {
@@ -334,7 +332,7 @@ function publicationsNextLoad(publicationsContainer, loaderContainer) {
 function generatePublicationHTML(element, index) {
   var date = new Date(element.date);
   var parsedDate = "".concat(date.getFullYear(), ".").concat(("0" + (date.getMonth() + 1)).slice(-2), ".").concat(("0" + date.getDay()).slice(-2), " ").concat(("0" + date.getHours()).slice(-2), ":").concat(("0" + date.getMinutes()).slice(-2));
-  return "\n    <article class=\"publications__release\">\n        <div class=\"publications__release-header\">\n            <img src=\"dist/images/comas.svg\" class=\"publications__release-commas-icon\" alt=\"ikona\">\n            <h2 class=\"publications__release-title ".concat(index == 0 || index == 1 ? 'mb-4' : '', "\">\n                ").concat(element.title, "\n            </h2>\n        </div>\n        <p class=\"publications__release-date\">Data dodania <time>").concat(parsedDate, "</time>.</p>\n        <img class=\"publications__release-teaser ").concat(index == 1 ? 'publications__release-teaser--big' : '', "\" src=\"").concat(element.image, "\" alt=\"").concat(element.title, " zajawka\"/>\n        <p class=\"publications__release-content\">").concat(element.text, "</p>\n    </article>");
+  return "\n    <article class=\"publications__release container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-6 col-md-12 order-last order-md-first\">\n                <div class=\"publications__release-header\">\n                    <img src=\"dist/images/comas.svg\" class=\"publications__release-commas-icon d-none d-md-block\" alt=\"ikona\">\n                    <h2 class=\"publications__release-title ".concat(index == 0 || index == 1 ? 'mb-2 mb-md-4' : '', "\">\n                        ").concat(element.title, "\n                    </h2>\n                </div>\n                <p class=\"publications__release-date d-none d-md-block\">Data dodania <time>").concat(parsedDate, "</time>.</p>\n            </div>\n            <div class=\"col-6 col-md-12 order-first order-md-last\">\n                <img class=\"publications__release-teaser ").concat(index == 1 ? 'publications__release-teaser--big' : '', "\" src=\"").concat(element.image, "\" alt=\"").concat(element.title, " zajawka\"/>\n            </div>\n        </div>\n        <p class=\"publications__release-content\">").concat(element.text, "</p>\n    </article>");
 }
 "use strict";
 
