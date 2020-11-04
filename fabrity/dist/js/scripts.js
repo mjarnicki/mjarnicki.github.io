@@ -105,7 +105,11 @@ function validateForm(event) {
   event.preventDefault();
   var formContainer = event.target.parentNode;
   var formValidity = formContainer.checkValidity();
-  formContainer.classList.add('form__validate');
+
+  if (!formValidity) {
+    formContainer.querySelector('input:invalid').focus();
+    formContainer.classList.add('form__validate');
+  }
 }
 "use strict";
 
@@ -242,6 +246,7 @@ function scrollToPageSection(event, item, offset) {
   });
   target.style.top = top;
   target.style.position = pos;
+  target.querySelector('a, button').focus();
 }
 
 function trapFocus(element) {
