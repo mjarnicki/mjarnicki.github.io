@@ -44,6 +44,13 @@
             <nav class="header__nav-container">
                 <ul class="header__desktop-menu d-none d-md-flex">
                     <li>
+                        <button class="header__contrast-button-icon contrast-icon" title="Zmień kolory witryny na mocno kontrastowe">
+                            <svg class="header__contrast-icon">
+                                <use xlink:href="dist/svg/svg.svg#eye" ></use>
+                            </svg>
+                        </button> 
+                    </li>
+                    <li>
                         <a href="#news" class="header__menu-item" title="Przejdź do wiadomości">
                             Wiadomości
                         </a> 
@@ -95,13 +102,13 @@
                     <div id="choose" class="flex-center mt-2 ">
                         <h2 class="form__header mb-5">Dzień dobry</h2>
 
-                        <button class="form__button-primary form-navigation" data-target="login">
+                        <button class="form__button-primary" data-target="login">
                             Zaloguj się
                         </button>
 
                         <p class="form__text-separator"> lub</p>
 
-                        <button class="form__button-secondary form-navigation" data-target="register">
+                        <button class="form__button-secondary" data-target="register">
                             Zarejestruj się
                         </button>
                     </div>
@@ -132,16 +139,16 @@
                             <label for="remember-session" class="form__swich-label">Zapamiętaj moją sesje</p>
                         </div>
 
-                        <button type="submit" value="Dalej" data-target="login-confirmed" class="form__button-primary mb-3 login-submit form-navigation">
+                        <button type="submit" value="Dalej" data-target="login-confirmed" class="form__button-primary mb-3 login-submit">
                             Dalej
                         </button>
 
-                        <button class="form__link form-navigation" data-target="register">Nie mam konta</button>
+                        <button class="form__link" data-target="register">Nie mam konta</button>
                     </form>
                     <!-- LOGIN CONFIRMED -->
                     <div id="login-confirmed" class="flex-center d-none">
                         <h2 class="form__header">Gratuluję, zalogowałeś się!</h2>
-                        <button class="form__link form-navigation" data-target="choose">Powrót</button>
+                        <button class="form__link" data-target="choose">Powrót</button>
                     </div>
                     <!-- REGISTER -->
                     <form id="register" class="flex-center d-none" >
@@ -185,11 +192,11 @@
                             <p class="form__text-error">Pole wymagane</p>
                         </div>
 
-                        <button type="submit" value="Załóż konto" data-target="register-confirmed" class="form__button-primary mb-3 register-submit form-navigation">
+                        <button type="submit" value="Załóż konto" data-target="register-confirmed" class="form__button-primary mb-3 register-submit">
                             Załóż konto
                         </button>
 
-                        <button class="form__link form-navigation" data-target="login">Chcę się zalogować</button>
+                        <button class="form__link" data-target="login">Chcę się zalogować</button>
                     </form>
                     <!-- REGISTER CONFIRMED -->
                     <div id="register-confirmed" class="flex-center d-none">
@@ -217,7 +224,7 @@
         <section class="technologies__container" id="technologies">
             <h2 class="technologies__header">Nasze technologie</h2>
             <div class="technologies__tiles-container">
-                <a href="" class="technologies__tile">
+                <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer" class="technologies__tile">
                     <svg class="technologies__tile-icon technologies__tile-icon--webpack">
                         <use xlink:href="dist/svg/svg.svg#webpack" ></use>
                     </svg>
@@ -226,7 +233,7 @@
                         Webpack
                     </p>
                 </a>
-                <a href="" class="technologies__tile">
+                <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer" class="technologies__tile">
                     <svg class="technologies__tile-icon technologies__tile-icon--js">
                         <use xlink:href="dist/svg/svg.svg#js" ></use>
                     </svg>
@@ -235,7 +242,7 @@
                         JavaScript
                     </p>
                 </a>
-                <a href="" class="technologies__tile">
+                <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" class="technologies__tile">
                     <svg class="technologies__tile-icon technologies__tile-icon--npm">
                         <use xlink:href="dist/svg/svg.svg#npm" ></use>
                     </svg>
@@ -244,7 +251,7 @@
                         Node package Manager
                     </p>
                 </a>
-                <a href="" class="technologies__tile">
+                <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer" class="technologies__tile">
                     <svg class="technologies__tile-icon technologies__tile-icon--html">
                         <use xlink:href="dist/svg/svg.svg#html5" ></use>
                     </svg>

@@ -8319,6 +8319,36 @@ body {
     body {
       margin-top: 51px; } }
 
+.contrast {
+  background-color: black; }
+  .contrast a, .contrast button {
+    text-decoration: underline; }
+  .contrast * {
+    color: yellow !important;
+    background-color: black !important;
+    border-color: yellow !important; }
+    .contrast *:focus {
+      outline: 2px solid red; }
+      .contrast *:focus svg, .contrast *:focus ~ svg, .contrast *:focus + svg {
+        fill: white !important; }
+  .contrast svg {
+    fill: white !important; }
+  .contrast .publications__release-commas-icon {
+    -webkit-filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(70deg) brightness(107%) contrast(101%);
+            filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(70deg) brightness(107%) contrast(101%);
+    background-color: transparent !important; }
+  .contrast .slider__dots-container {
+    background-color: transparent !important; }
+  .contrast .form__checkbox-checkbox {
+    border: 1px solid yellow; }
+  .contrast .form__button-primary {
+    background-color: yellow !important;
+    color: black !important; }
+  .contrast .form__swich-checkbox:focus, .contrast .form__checkbox-input:focus {
+    outline: 0; }
+    .contrast .form__swich-checkbox:focus + label, .contrast .form__checkbox-input:focus + label {
+      outline: 1px solid red; }
+
 .hamburger__container {
   width: 24px;
   height: 24px;
@@ -8392,7 +8422,8 @@ body {
   top: 0;
   left: 0;
   background-color: #F7F9FB;
-  z-index: 10; }
+  z-index: 10;
+  border-bottom: 1px solid transparent; }
 
 .header__container {
   position: relative;
@@ -8408,16 +8439,27 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: margin 0.2s linear;
+  transition: margin 0.2s linear; }
   @media (max-width: 767.98px) {
     .header__container {
       height: 51px;
       margin: 0;
       padding: 15px 25px; } }
+  @media (min-width: 768px) {
+    .header__container--shrink {
+      margin: 20px auto;
+      -webkit-transition: margin 0.2s linear;
+      transition: margin 0.2s linear; } }
 
 .header__tag-icon {
   width: 48px;
   height: 48px; }
+  @media (max-width: 767.98px) {
+    .header__tag-icon {
+      height: 20px;
+      width: 20px; } }
 
 .header__title {
   display: -webkit-box;
@@ -8478,6 +8520,19 @@ body {
     -webkit-transition: top 0.3s ease-in-out;
     transition: top 0.3s ease-in-out;
     top: 0; }
+
+.header__contrast-button-icon {
+  margin-right: 2px; }
+  .header__contrast-button-icon:hover .header__contrast-icon, .header__contrast-button-icon:focus .header__contrast-icon {
+    -webkit-transition: fill .3s ease-in-out;
+    transition: fill .3s ease-in-out;
+    fill: #E06D00; }
+
+.header__contrast-icon {
+  width: 20px;
+  height: 12.5px;
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out; }
 
 .header__menu-item {
   font-weight: 600;
@@ -8638,7 +8693,11 @@ body {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 0 20px 20px 0; }
 
 .form__header {
   font-size: 2.25rem;
@@ -8965,14 +9024,17 @@ body {
   font-size: 0.875rem;
   margin-bottom: 12px; }
 
-.publications__teaser {
+.publications__release-teaser {
   width: 100%;
   height: 145px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 8px; }
-  .publications__teaser--big {
+  .publications__release-teaser--big {
     height: 290px; }
+
+.publications__release-content a {
+  color: #E06D00; }
 
 .publications__loader {
   position: absolute;
@@ -9018,7 +9080,7 @@ body {
   transition: fill .2s ease-in-out; }
 
 .technologies__container {
-  max-width: 985px;
+  max-width: 991px;
   margin: 0 auto; }
 
 .technologies__header {
@@ -9034,12 +9096,13 @@ body {
   display: flex;
   margin: 0 15px;
   overflow-y: auto;
-  padding-bottom: 35px; }
+  padding: 2px 2px 35px 2px; }
 
 .technologies__tile {
   background: white;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  border: 1px solid transparent;
   border-radius: 5px;
   padding: 36px 20px 0 20px;
   height: 225px;
@@ -9111,7 +9174,8 @@ body {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-top: 1px solid white; }
 
 .footer__text {
   font-size: 1.125rem;

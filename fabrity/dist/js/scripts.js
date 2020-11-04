@@ -118,11 +118,36 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 document.addEventListener("DOMContentLoaded", function () {
   var body = document.querySelector('body');
   var parent = document.querySelector('.header__container');
+  var contrastIcon = document.querySelector('.contrast-icon');
   var hamburgerIcon = parent.querySelector('.hamburger__container');
   var mobileMenuContainer = parent.querySelector('.header__mobile-menu');
   var mobileMenuItem = mobileMenuContainer.querySelectorAll('.header__menu-item');
   var desktopMenuContainer = parent.querySelector('.header__desktop-menu');
-  var desktopMenuItem = desktopMenuContainer.querySelectorAll('.header__menu-item'); // toggle HamburgerMenu events
+  var desktopMenuItem = desktopMenuContainer.querySelectorAll('.header__menu-item'); // toggle contrast
+
+  if (localStorage.contrast) {
+    body.classList.add('contrast');
+  }
+
+  contrastIcon.addEventListener('click', function () {
+    if (localStorage.contrast) {
+      body.classList.remove('contrast');
+      localStorage.setItem('contrast', '');
+    } else {
+      body.classList.add('contrast');
+      localStorage.setItem('contrast', true);
+    }
+  }); // header shrink
+
+  window.addEventListener('scroll', function () {
+    console.log(window.pageYOffset);
+
+    if (window.pageYOffset > 80) {
+      parent.classList.add('header__container--shrink');
+    } else if (window.pageYOffset <= 80) {
+      parent.classList.remove('header__container--shrink');
+    }
+  }); // toggle HamburgerMenu events
 
   hamburgerIcon.addEventListener('click', function () {
     toggleMobileMenu();
@@ -304,7 +329,7 @@ function publicationsNextLoad(publicationsContainer, loaderContainer) {
 function generatePublicationHTML(element, index) {
   var date = new Date(element.date);
   var parsedDate = "".concat(date.getFullYear(), ".").concat(("0" + (date.getMonth() + 1)).slice(-2), ".").concat(("0" + date.getDay()).slice(-2), " ").concat(("0" + date.getHours()).slice(-2), ":").concat(("0" + date.getMinutes()).slice(-2));
-  return "\n    <article class=\"publications__release\">\n        <div class=\"publications__release-header\">\n            <img src=\"dist/images/comas.svg\" class=\"publications__release-commas-icon\" alt=\"ikona\">\n            <h2 class=\"publications__release-title ".concat(index == 0 || index == 1 ? 'mb-4' : '', "\">\n                ").concat(element.title, "\n            </h2>\n        </div>\n        <p class=\"publications__release-date\">Data dodania <time>").concat(parsedDate, "</time>.</p>\n        <img class=\"publications__teaser ").concat(index == 1 ? 'publications__teaser--big' : '', "\" src=\"").concat(element.image, "\" alt=\"").concat(element.title, " zajawka\"/>\n        <p>").concat(element.text, "</p>\n    </article>");
+  return "\n    <article class=\"publications__release\">\n        <div class=\"publications__release-header\">\n            <img src=\"dist/images/comas.svg\" class=\"publications__release-commas-icon\" alt=\"ikona\">\n            <h2 class=\"publications__release-title ".concat(index == 0 || index == 1 ? 'mb-4' : '', "\">\n                ").concat(element.title, "\n            </h2>\n        </div>\n        <p class=\"publications__release-date\">Data dodania <time>").concat(parsedDate, "</time>.</p>\n        <img class=\"publications__release-teaser ").concat(index == 1 ? 'publications__release-teaser--big' : '', "\" src=\"").concat(element.image, "\" alt=\"").concat(element.title, " zajawka\"/>\n        <p class=\"publications__release-content\">").concat(element.text, "</p>\n    </article>");
 }
 "use strict";
 
