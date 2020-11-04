@@ -8346,6 +8346,10 @@ body {
     color: black !important; }
   .contrast .hamburger__line {
     background-color: yellow !important; }
+  .contrast .slider__toggle-autoplay--play {
+    border-color: transparent transparent transparent yellow !important; }
+  .contrast .loader {
+    border-top: 16px solid white; }
   .contrast .form__swich-checkbox:focus, .contrast .form__checkbox-input:focus {
     outline: 0; }
     .contrast .form__swich-checkbox:focus + label, .contrast .form__checkbox-input:focus + label {
@@ -9065,11 +9069,10 @@ body {
   height: 145px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 8px;
-  height: 92px; }
-  @media (min-width: 576px) and (max-width: 767.98px) {
+  margin-bottom: 8px; }
+  @media (max-width: 767.98px) {
     .publications__release-teaser {
-      height: 120px; } }
+      height: 92px; } }
   @media (min-width: 768px) {
     .publications__release-teaser--big {
       height: 290px; } }
@@ -9138,7 +9141,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 15px;
   overflow-y: auto;
   padding: 2px 2px 35px 2px; }
 
