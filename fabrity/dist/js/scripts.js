@@ -25,9 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (hidePasswordFlag) {
           passwordInput.type = "password";
           showPasswordbutton.setAttribute("aria-label", 'pokaż hasło');
+          showPasswordbutton.classList.remove('form__show-password-button--visible');
         } else {
           passwordInput.type = "text";
           showPasswordbutton.setAttribute("aria-label", 'ukryj hasło');
+          showPasswordbutton.classList.add('form__show-password-button--visible');
         }
 
         hidePasswordFlag = !hidePasswordFlag;
@@ -191,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
       var item = _step2.value;
       item.addEventListener('click', function (event) {
         scrollToPageSection(event, item, 120);
-        console.log('adsfasdf');
       });
       item.addEventListener('keypress', function (event) {
         if (event.keyCode == 32 || event.keyCode == 13) scrollToPageSection(event, item, 120);
@@ -237,14 +238,13 @@ function scrollToPageSection(event, item, offset) {
   var targetId = item.getAttribute('href');
   var target = document.querySelector(targetId);
   var offsetTop = target.offsetTop - offset;
-  console.log(offsetTop);
-  scroll({
+  window.scrollTo({
     top: offsetTop,
     behavior: "smooth"
   });
   setTimeout(function () {
     return target.querySelector('a, button').focus();
-  }, 600);
+  }, 800);
 }
 
 function trapFocus(element) {
